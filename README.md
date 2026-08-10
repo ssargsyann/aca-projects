@@ -17,7 +17,7 @@ The final model is trained end-to-end on a synthetic task: translating human-rea
 
 ## Project Structure
 
-The project is contained in a single, self-documented Jupyter notebook: [`Transformers.ipynb`](./Transformers.ipynb).
+The project is contained in a single, self-documented Jupyter notebook: [`transformer_from_scratch.ipynb`](./transformer_from_scratch.ipynb).
 
 ### Part 1: Instructor Demos
 
@@ -47,8 +47,8 @@ A complete Encoder-Decoder Seq2Seq Transformer, implemented from scratch in PyTo
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/diy-transformer.git
-cd diy-transformer
+git clone https://github.com/ssargsyann/seq2seq-transformer.git
+cd seq2seq-transformer
 ```
 
 ### 2. Install dependencies
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 ### 3. Run the notebook
 
 ```bash
-jupyter notebook Transformers.ipynb
+jupyter notebook transformer_from_scratch.ipynb
 ```
 
 Run all cells sequentially. Part 2 trains in a few minutes on CPU (or seconds on GPU), reaching a low loss within 5–10 epochs.
