@@ -113,7 +113,7 @@ customer-segmentation/
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/customer-segmentation.git
+git clone https://github.com/ssargsyann/customer-segmentation.git
 cd customer-segmentation
 ```
 
