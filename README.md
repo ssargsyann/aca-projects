@@ -44,8 +44,8 @@ of generated text, and reimplements each stage of that pipeline by hand:
 ## Installation
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-directory>
+git clone https://github.com/ssargsyann/llm-decoding-strategies
+cd llm-decoding-strategies
 pip install -r requirements.txt
 ```
 
@@ -73,6 +73,3 @@ print(output)
 Try varying `temperature`, `top_k`, and `top_p` to see how each parameter
 independently affects output diversity and coherence.
 
-## License
-
-MIT
