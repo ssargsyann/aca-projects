@@ -37,7 +37,9 @@ The [customer segmentation project](projects/customer-segmentation-marketing/REA
 
 The [CIFAR-10 CNN project](projects/cifar10-cnn-pytorch/README.md) now has configurable training, validation-selected checkpoints, separate test evaluation, single-image inference, synthetic/real smoke notebooks, and automated checks. Its original 81.56% notebook log is preserved as historical evidence; the maintained verification is a short CPU smoke run, not a fresh full benchmark.
 
-The [CV Zoo project](projects/cv-zoo-yolo-pytorch/README.md) now provides four pretrained vision tasks, explicit verified weight-cache handling, tested IoU/grid/anchor calculations, two executable notebooks, and a real-image qualitative report. It distinguishes YOLOv1 cell-shared classes from anchor-based output layouts; the geometry is educational, with no YOLO training or accuracy benchmark claimed. The other three projects retain their original imported layout.
+The [CV Zoo project](projects/cv-zoo-yolo-pytorch/README.md) now provides four pretrained vision tasks, explicit verified weight-cache handling, tested IoU/grid/anchor calculations, two executable notebooks, and a real-image qualitative report. It distinguishes YOLOv1 cell-shared classes from anchor-based output layouts; the geometry is educational, with no YOLO training or accuracy benchmark claimed.
+
+The [U-Net and YOLOv8 project](projects/unet-yolov8-cv/README.md) now includes fixed synthetic train/validation/test sets, validation-selected U-Net checkpoints, local COCO8 YOLOv8n fine-tuning, bounded-memory image/video prediction, explicit checksum-pinned assets, maintained notebooks and regression checks. The width-8 synthetic smoke reached test IoU 0.9022; tiny COCO8 metrics and unlabeled video results have separate scope limitations. The other two projects retain their original imported layout.
 
 To try the ICU pipeline without a dataset download, install that project and run `icu-mortality demo`, or open its `notebooks/quickstart.ipynb`. The demo uses explicitly synthetic records and arbitrary labels.
 

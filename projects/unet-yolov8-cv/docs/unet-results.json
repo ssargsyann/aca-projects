@@ -1,0 +1,89 @@
+{
+  "scope": "fixed_synthetic_shapes_only_not_real_world_benchmark",
+  "config": {
+    "seed": 42,
+    "image_size": [
+      64,
+      64
+    ],
+    "train_count": 192,
+    "validation_count": 48,
+    "test_count": 48,
+    "epochs": 6,
+    "batch_size": 8,
+    "base_channels": 8,
+    "learning_rate": 0.001,
+    "threshold": 0.5,
+    "cpu_threads": 2,
+    "device": "cpu"
+  },
+  "generator": "pillow_shapes_v1_seed_sequence_seed_split_index",
+  "split_ids": {
+    "train": 0,
+    "validation": 1,
+    "test": 2
+  },
+  "best_epoch": 6,
+  "validation": {
+    "loss": 0.32005026439825696,
+    "iou": 0.8919200463123741,
+    "dice": 0.9410546989529869
+  },
+  "test": {
+    "loss": 0.32130418221155804,
+    "iou": 0.9021685075875969,
+    "dice": 0.9477893855466829
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6042860398689905,
+      "validation_loss": 0.5956871012846628,
+      "validation_iou": 0.5248245577415055,
+      "validation_dice": 0.5935430784486051
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5135520001252493,
+      "validation_loss": 0.4993516206741333,
+      "validation_iou": 0.5931389518599979,
+      "validation_dice": 0.6831804868358947
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.45695482194423676,
+      "validation_loss": 0.43473028639952344,
+      "validation_iou": 0.7822898387866686,
+      "validation_dice": 0.8524535902265981
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.40946906929214794,
+      "validation_loss": 0.4067902664343516,
+      "validation_iou": 0.7622203735791006,
+      "validation_dice": 0.8391948521326417
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.3765644071002801,
+      "validation_loss": 0.35286010801792145,
+      "validation_iou": 0.8414382711472391,
+      "validation_dice": 0.8973132227842787
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3431571051478386,
+      "validation_loss": 0.32005026439825696,
+      "validation_iou": 0.8919200463123741,
+      "validation_dice": 0.9410546989529869
+    }
+  ],
+  "parameters": 486553,
+  "checkpoint_sha256": "1253bf352e2bc341cd9523aa0e241e2677254e34bb334bf000a6d954dad0ed94",
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "matplotlib": "3.11.2"
+  }
+}

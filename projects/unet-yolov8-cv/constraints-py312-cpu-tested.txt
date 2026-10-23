@@ -1,0 +1,11 @@
+# Direct dependencies observed on Windows/Python 3.12 CPU; not a complete environment lock.
+# Use the PyTorch CPU wheel index for +cpu versions.
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+numpy==2.5.4
+pillow==13.0.0
+matplotlib==3.11.2
+ultralytics==8.4.184
+opencv-python==5.0.0.93
+pyyaml==6.0.3
+jupyterlab==4.6.4

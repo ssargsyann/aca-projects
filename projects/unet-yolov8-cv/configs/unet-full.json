@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "image_size": [
+    128,
+    128
+  ],
+  "train_count": 510,
+  "validation_count": 90,
+  "test_count": 90,
+  "epochs": 15,
+  "batch_size": 8,
+  "base_channels": 64,
+  "learning_rate": 0.001,
+  "threshold": 0.5,
+  "cpu_threads": 2,
+  "device": "auto"
+}

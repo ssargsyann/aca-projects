@@ -1,0 +1,33 @@
+{
+  "scope": "qualitative_predictions_no_ground_truth_scoring",
+  "frames_processed": 377,
+  "detections": 165,
+  "max_frames": null,
+  "previews": [
+    "frame-0000.jpg",
+    "frame-0001.jpg",
+    "frame-0002.jpg",
+    "frame-0003.jpg"
+  ],
+  "checkpoint_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+  "source_sha256": "d31e0ebf194cc16e50eea784e7c3b0b1bb7976a4fb9b3fec26cb92a6704cca34",
+  "imgsz": 320,
+  "confidence_threshold": 0.25,
+  "device": "cpu",
+  "ultralytics_version": "8.4.184",
+  "coordinate_frame": "original_frame_xyxy_pixels",
+  "video": true,
+  "video_fps": 12.5,
+  "decoded_output_frames": 377,
+  "frames_with_detections": 113,
+  "detections_by_class": {
+    "car": 81,
+    "airplane": 2,
+    "boat": 3,
+    "cell phone": 62,
+    "bottle": 1,
+    "truck": 2,
+    "bus": 14
+  },
+  "interpretation": "Frame-wise boxes, not unique tracked objects or ground-truth scored events"
+}

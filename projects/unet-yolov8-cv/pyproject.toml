@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "aca-unet-yolo"
+version = "0.1.0"
+description = "Deterministic synthetic U-Net training and local YOLOv8 workflows"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.6,<3", "numpy>=1.26,<3", "pillow>=10,<14", "matplotlib>=3.7,<4"]
+[project.optional-dependencies]
+yolo = ["ultralytics>=8.4,<9", "pyyaml>=6,<7", "opencv-python>=4.9,<6"]
+notebook = ["jupyterlab>=4,<5"]
+[project.scripts]
+unet-yolo = "unet_yolo.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]

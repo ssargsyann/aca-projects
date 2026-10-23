@@ -1,0 +1,377 @@
+{"frame_index": 0, "size": [768, 432], "objects": []}
+{"frame_index": 1, "size": [768, 432], "objects": []}
+{"frame_index": 2, "size": [768, 432], "objects": []}
+{"frame_index": 3, "size": [768, 432], "objects": []}
+{"frame_index": 4, "size": [768, 432], "objects": []}
+{"frame_index": 5, "size": [768, 432], "objects": []}
+{"frame_index": 6, "size": [768, 432], "objects": []}
+{"frame_index": 7, "size": [768, 432], "objects": []}
+{"frame_index": 8, "size": [768, 432], "objects": []}
+{"frame_index": 9, "size": [768, 432], "objects": []}
+{"frame_index": 10, "size": [768, 432], "objects": []}
+{"frame_index": 11, "size": [768, 432], "objects": []}
+{"frame_index": 12, "size": [768, 432], "objects": []}
+{"frame_index": 13, "size": [768, 432], "objects": []}
+{"frame_index": 14, "size": [768, 432], "objects": []}
+{"frame_index": 15, "size": [768, 432], "objects": []}
+{"frame_index": 16, "size": [768, 432], "objects": []}
+{"frame_index": 17, "size": [768, 432], "objects": []}
+{"frame_index": 18, "size": [768, 432], "objects": []}
+{"frame_index": 19, "size": [768, 432], "objects": []}
+{"frame_index": 20, "size": [768, 432], "objects": []}
+{"frame_index": 21, "size": [768, 432], "objects": []}
+{"frame_index": 22, "size": [768, 432], "objects": []}
+{"frame_index": 23, "size": [768, 432], "objects": []}
+{"frame_index": 24, "size": [768, 432], "objects": []}
+{"frame_index": 25, "size": [768, 432], "objects": []}
+{"frame_index": 26, "size": [768, 432], "objects": []}
+{"frame_index": 27, "size": [768, 432], "objects": []}
+{"frame_index": 28, "size": [768, 432], "objects": []}
+{"frame_index": 29, "size": [768, 432], "objects": []}
+{"frame_index": 30, "size": [768, 432], "objects": []}
+{"frame_index": 31, "size": [768, 432], "objects": []}
+{"frame_index": 32, "size": [768, 432], "objects": []}
+{"frame_index": 33, "size": [768, 432], "objects": []}
+{"frame_index": 34, "size": [768, 432], "objects": []}
+{"frame_index": 35, "size": [768, 432], "objects": []}
+{"frame_index": 36, "size": [768, 432], "objects": []}
+{"frame_index": 37, "size": [768, 432], "objects": []}
+{"frame_index": 38, "size": [768, 432], "objects": []}
+{"frame_index": 39, "size": [768, 432], "objects": []}
+{"frame_index": 40, "size": [768, 432], "objects": []}
+{"frame_index": 41, "size": [768, 432], "objects": []}
+{"frame_index": 42, "size": [768, 432], "objects": []}
+{"frame_index": 43, "size": [768, 432], "objects": []}
+{"frame_index": 44, "size": [768, 432], "objects": []}
+{"frame_index": 45, "size": [768, 432], "objects": []}
+{"frame_index": 46, "size": [768, 432], "objects": []}
+{"frame_index": 47, "size": [768, 432], "objects": []}
+{"frame_index": 48, "size": [768, 432], "objects": []}
+{"frame_index": 49, "size": [768, 432], "objects": []}
+{"frame_index": 50, "size": [768, 432], "objects": []}
+{"frame_index": 51, "size": [768, 432], "objects": []}
+{"frame_index": 52, "size": [768, 432], "objects": []}
+{"frame_index": 53, "size": [768, 432], "objects": []}
+{"frame_index": 54, "size": [768, 432], "objects": []}
+{"frame_index": 55, "size": [768, 432], "objects": []}
+{"frame_index": 56, "size": [768, 432], "objects": []}
+{"frame_index": 57, "size": [768, 432], "objects": []}
+{"frame_index": 58, "size": [768, 432], "objects": []}
+{"frame_index": 59, "size": [768, 432], "objects": []}
+{"frame_index": 60, "size": [768, 432], "objects": []}
+{"frame_index": 61, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6444383859634399, "xyxy": [283.32916259765625, 320.1834716796875, 476.49957275390625, 432.0]}]}
+{"frame_index": 62, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.41699880361557007, "xyxy": [280.4165344238281, 302.09796142578125, 476.4850769042969, 431.9359130859375]}, {"class_id": 4, "class_name": "airplane", "confidence": 0.3041766881942749, "xyxy": [278.5061950683594, 303.5139465332031, 766.2098388671875, 432.0]}]}
+{"frame_index": 63, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.43206852674484253, "xyxy": [279.76318359375, 289.2819519042969, 479.38470458984375, 432.0]}, {"class_id": 4, "class_name": "airplane", "confidence": 0.3722636103630066, "xyxy": [277.9045104980469, 287.61669921875, 765.7926635742188, 432.0]}]}
+{"frame_index": 64, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5900264382362366, "xyxy": [277.2372741699219, 276.7688293457031, 477.4822998046875, 430.8695983886719]}]}
+{"frame_index": 65, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.4770597517490387, "xyxy": [277.00152587890625, 258.106201171875, 481.02899169921875, 429.97216796875]}, {"class_id": 8, "class_name": "boat", "confidence": 0.327219694852829, "xyxy": [277.67486572265625, 258.2005920410156, 482.34912109375, 431.7203063964844]}]}
+{"frame_index": 66, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5166807174682617, "xyxy": [274.9973449707031, 246.93338012695312, 480.6612854003906, 430.5203857421875]}, {"class_id": 8, "class_name": "boat", "confidence": 0.2591044008731842, "xyxy": [276.1048278808594, 245.87437438964844, 482.1837158203125, 431.7620544433594]}]}
+{"frame_index": 67, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.39047107100486755, "xyxy": [275.2166748046875, 227.32284545898438, 481.8701171875, 430.55108642578125]}]}
+{"frame_index": 68, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.49199268221855164, "xyxy": [275.2498474121094, 216.37033081054688, 481.7249450683594, 430.6308288574219]}]}
+{"frame_index": 69, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.2766505479812622, "xyxy": [274.9548645019531, 205.53594970703125, 480.6477355957031, 430.5008239746094]}]}
+{"frame_index": 70, "size": [768, 432], "objects": [{"class_id": 8, "class_name": "boat", "confidence": 0.6009513139724731, "xyxy": [272.4346008300781, 188.01585388183594, 478.14453125, 427.53729248046875]}]}
+{"frame_index": 71, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.4045547544956207, "xyxy": [272.1037902832031, 178.62149047851562, 475.5394592285156, 429.67449951171875]}]}
+{"frame_index": 72, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5233347415924072, "xyxy": [272.3089294433594, 162.80516052246094, 471.01873779296875, 431.38031005859375]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.488445907831192, "xyxy": [274.30621337890625, 162.4874725341797, 470.58648681640625, 430.85430908203125]}]}
+{"frame_index": 73, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.6999810934066772, "xyxy": [275.2361145019531, 151.31118774414062, 466.2010498046875, 429.1785888671875]}]}
+{"frame_index": 74, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.5986160635948181, "xyxy": [274.2833557128906, 141.4921875, 463.4682312011719, 430.55670166015625]}]}
+{"frame_index": 75, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.7612165808677673, "xyxy": [273.7588806152344, 126.94874572753906, 458.9476318359375, 424.983642578125]}]}
+{"frame_index": 76, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8399516344070435, "xyxy": [272.5791931152344, 116.29376220703125, 453.76702880859375, 407.14495849609375]}]}
+{"frame_index": 77, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8169184327125549, "xyxy": [274.6087646484375, 103.02696990966797, 448.96356201171875, 384.3030090332031]}]}
+{"frame_index": 78, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8835891485214233, "xyxy": [274.00830078125, 91.6327896118164, 445.4034423828125, 370.4660339355469]}]}
+{"frame_index": 79, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9012799263000488, "xyxy": [275.2059631347656, 85.7269058227539, 442.3849182128906, 355.5774230957031]}]}
+{"frame_index": 80, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9338822960853577, "xyxy": [274.6014099121094, 72.14601135253906, 436.5420227050781, 334.8395690917969]}]}
+{"frame_index": 81, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8237506747245789, "xyxy": [275.1999206542969, 61.94198226928711, 434.1005859375, 321.9806823730469]}]}
+{"frame_index": 82, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.949279248714447, "xyxy": [276.97052001953125, 51.21525955200195, 429.3059387207031, 300.8676452636719]}]}
+{"frame_index": 83, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.923513650894165, "xyxy": [276.53814697265625, 42.29218292236328, 426.43011474609375, 286.6849670410156]}]}
+{"frame_index": 84, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8893322944641113, "xyxy": [277.1570129394531, 33.11418533325195, 424.3968200683594, 275.47259521484375]}]}
+{"frame_index": 85, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9121667146682739, "xyxy": [276.0848083496094, 21.18027687072754, 422.55908203125, 257.4012756347656]}]}
+{"frame_index": 86, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9138967394828796, "xyxy": [275.9827575683594, 13.177021026611328, 420.88092041015625, 245.6243133544922]}]}
+{"frame_index": 87, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9012377858161926, "xyxy": [277.2151794433594, 4.252386569976807, 417.3662109375, 228.14364624023438]}]}
+{"frame_index": 88, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9291952252388, "xyxy": [278.26458740234375, 0.0, 416.442138671875, 214.65145874023438]}]}
+{"frame_index": 89, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9219963550567627, "xyxy": [277.8738098144531, 0.34412842988967896, 413.79595947265625, 204.33384704589844]}]}
+{"frame_index": 90, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9342634677886963, "xyxy": [276.85467529296875, 1.20703125, 410.9451599121094, 189.49575805664062]}]}
+{"frame_index": 91, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9380184412002563, "xyxy": [279.13922119140625, 0.0, 410.5207824707031, 177.0911865234375]}]}
+{"frame_index": 92, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9353309273719788, "xyxy": [279.9471130371094, 0.15239869058132172, 407.73516845703125, 162.17250061035156]}]}
+{"frame_index": 93, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9108196496963501, "xyxy": [282.2112121582031, 0.0, 405.56573486328125, 150.6592559814453]}]}
+{"frame_index": 94, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8906998038291931, "xyxy": [283.11419677734375, 0.0, 404.5500183105469, 142.5730438232422]}]}
+{"frame_index": 95, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8948296904563904, "xyxy": [282.4258117675781, 0.0, 403.1212463378906, 128.62229919433594]}]}
+{"frame_index": 96, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8454388380050659, "xyxy": [283.0589599609375, 0.0, 401.97100830078125, 117.61045837402344]}, {"class_id": 2, "class_name": "car", "confidence": 0.29616737365722656, "xyxy": [283.7791442871094, 0.0, 402.630859375, 116.20767211914062]}]}
+{"frame_index": 97, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.7991344928741455, "xyxy": [282.7864074707031, 0.0, 401.166015625, 104.1302719116211]}]}
+{"frame_index": 98, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8406601548194885, "xyxy": [283.32891845703125, 0.0, 401.4691467285156, 94.93563842773438]}]}
+{"frame_index": 99, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.3774109184741974, "xyxy": [282.43719482421875, 0.0, 401.9598083496094, 86.80476379394531]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.36434102058410645, "xyxy": [283.2704772949219, 0.0, 401.4837341308594, 88.37590789794922]}]}
+{"frame_index": 100, "size": [768, 432], "objects": []}
+{"frame_index": 101, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.3547685146331787, "xyxy": [285.0603332519531, 1.5166237354278564, 398.8500061035156, 67.24312591552734]}]}
+{"frame_index": 102, "size": [768, 432], "objects": []}
+{"frame_index": 103, "size": [768, 432], "objects": []}
+{"frame_index": 104, "size": [768, 432], "objects": []}
+{"frame_index": 105, "size": [768, 432], "objects": []}
+{"frame_index": 106, "size": [768, 432], "objects": []}
+{"frame_index": 107, "size": [768, 432], "objects": []}
+{"frame_index": 108, "size": [768, 432], "objects": []}
+{"frame_index": 109, "size": [768, 432], "objects": []}
+{"frame_index": 110, "size": [768, 432], "objects": []}
+{"frame_index": 111, "size": [768, 432], "objects": []}
+{"frame_index": 112, "size": [768, 432], "objects": []}
+{"frame_index": 113, "size": [768, 432], "objects": []}
+{"frame_index": 114, "size": [768, 432], "objects": []}
+{"frame_index": 115, "size": [768, 432], "objects": []}
+{"frame_index": 116, "size": [768, 432], "objects": []}
+{"frame_index": 117, "size": [768, 432], "objects": []}
+{"frame_index": 118, "size": [768, 432], "objects": []}
+{"frame_index": 119, "size": [768, 432], "objects": []}
+{"frame_index": 120, "size": [768, 432], "objects": []}
+{"frame_index": 121, "size": [768, 432], "objects": []}
+{"frame_index": 122, "size": [768, 432], "objects": []}
+{"frame_index": 123, "size": [768, 432], "objects": []}
+{"frame_index": 124, "size": [768, 432], "objects": []}
+{"frame_index": 125, "size": [768, 432], "objects": []}
+{"frame_index": 126, "size": [768, 432], "objects": []}
+{"frame_index": 127, "size": [768, 432], "objects": []}
+{"frame_index": 128, "size": [768, 432], "objects": []}
+{"frame_index": 129, "size": [768, 432], "objects": []}
+{"frame_index": 130, "size": [768, 432], "objects": []}
+{"frame_index": 131, "size": [768, 432], "objects": []}
+{"frame_index": 132, "size": [768, 432], "objects": []}
+{"frame_index": 133, "size": [768, 432], "objects": []}
+{"frame_index": 134, "size": [768, 432], "objects": []}
+{"frame_index": 135, "size": [768, 432], "objects": []}
+{"frame_index": 136, "size": [768, 432], "objects": []}
+{"frame_index": 137, "size": [768, 432], "objects": []}
+{"frame_index": 138, "size": [768, 432], "objects": []}
+{"frame_index": 139, "size": [768, 432], "objects": []}
+{"frame_index": 140, "size": [768, 432], "objects": []}
+{"frame_index": 141, "size": [768, 432], "objects": []}
+{"frame_index": 142, "size": [768, 432], "objects": []}
+{"frame_index": 143, "size": [768, 432], "objects": []}
+{"frame_index": 144, "size": [768, 432], "objects": []}
+{"frame_index": 145, "size": [768, 432], "objects": []}
+{"frame_index": 146, "size": [768, 432], "objects": []}
+{"frame_index": 147, "size": [768, 432], "objects": []}
+{"frame_index": 148, "size": [768, 432], "objects": []}
+{"frame_index": 149, "size": [768, 432], "objects": []}
+{"frame_index": 150, "size": [768, 432], "objects": []}
+{"frame_index": 151, "size": [768, 432], "objects": []}
+{"frame_index": 152, "size": [768, 432], "objects": []}
+{"frame_index": 153, "size": [768, 432], "objects": []}
+{"frame_index": 154, "size": [768, 432], "objects": []}
+{"frame_index": 155, "size": [768, 432], "objects": []}
+{"frame_index": 156, "size": [768, 432], "objects": []}
+{"frame_index": 157, "size": [768, 432], "objects": []}
+{"frame_index": 158, "size": [768, 432], "objects": []}
+{"frame_index": 159, "size": [768, 432], "objects": []}
+{"frame_index": 160, "size": [768, 432], "objects": []}
+{"frame_index": 161, "size": [768, 432], "objects": []}
+{"frame_index": 162, "size": [768, 432], "objects": []}
+{"frame_index": 163, "size": [768, 432], "objects": []}
+{"frame_index": 164, "size": [768, 432], "objects": []}
+{"frame_index": 165, "size": [768, 432], "objects": []}
+{"frame_index": 166, "size": [768, 432], "objects": []}
+{"frame_index": 167, "size": [768, 432], "objects": []}
+{"frame_index": 168, "size": [768, 432], "objects": []}
+{"frame_index": 169, "size": [768, 432], "objects": []}
+{"frame_index": 170, "size": [768, 432], "objects": []}
+{"frame_index": 171, "size": [768, 432], "objects": []}
+{"frame_index": 172, "size": [768, 432], "objects": []}
+{"frame_index": 173, "size": [768, 432], "objects": []}
+{"frame_index": 174, "size": [768, 432], "objects": []}
+{"frame_index": 175, "size": [768, 432], "objects": []}
+{"frame_index": 176, "size": [768, 432], "objects": []}
+{"frame_index": 177, "size": [768, 432], "objects": []}
+{"frame_index": 178, "size": [768, 432], "objects": []}
+{"frame_index": 179, "size": [768, 432], "objects": []}
+{"frame_index": 180, "size": [768, 432], "objects": []}
+{"frame_index": 181, "size": [768, 432], "objects": []}
+{"frame_index": 182, "size": [768, 432], "objects": []}
+{"frame_index": 183, "size": [768, 432], "objects": []}
+{"frame_index": 184, "size": [768, 432], "objects": []}
+{"frame_index": 185, "size": [768, 432], "objects": []}
+{"frame_index": 186, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.5769654512405396, "xyxy": [152.0167694091797, 2.224729299545288, 264.5428466796875, 67.17803192138672]}]}
+{"frame_index": 187, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.43613624572753906, "xyxy": [149.4388885498047, 2.1205718517303467, 264.18359375, 77.89464569091797]}]}
+{"frame_index": 188, "size": [768, 432], "objects": [{"class_id": 39, "class_name": "bottle", "confidence": 0.37628689408302307, "xyxy": [146.06365966796875, 1.0147522687911987, 264.51031494140625, 92.89933013916016]}]}
+{"frame_index": 189, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.6532245874404907, "xyxy": [146.0625762939453, 0.0, 263.36627197265625, 100.93869018554688]}]}
+{"frame_index": 190, "size": [768, 432], "objects": []}
+{"frame_index": 191, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.3382980525493622, "xyxy": [137.94049072265625, 0.0, 269.1480407714844, 128.9564208984375]}]}
+{"frame_index": 192, "size": [768, 432], "objects": []}
+{"frame_index": 193, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.661919891834259, "xyxy": [132.5240936279297, 0.17354737222194672, 269.5574035644531, 156.20347595214844]}, {"class_id": 2, "class_name": "car", "confidence": 0.27834460139274597, "xyxy": [318.65838623046875, 321.3145751953125, 507.8646240234375, 428.1622619628906]}]}
+{"frame_index": 194, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5956729054450989, "xyxy": [131.14988708496094, 0.0, 268.17657470703125, 167.5887908935547]}, {"class_id": 7, "class_name": "truck", "confidence": 0.514517068862915, "xyxy": [130.84915161132812, 0.0, 269.3393249511719, 167.7587432861328]}, {"class_id": 2, "class_name": "car", "confidence": 0.3869505524635315, "xyxy": [318.56573486328125, 307.5038757324219, 505.4588623046875, 428.62420654296875]}]}
+{"frame_index": 195, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5042918920516968, "xyxy": [126.70836639404297, 0.0, 266.4312438964844, 184.37815856933594]}, {"class_id": 2, "class_name": "car", "confidence": 0.34991660714149475, "xyxy": [317.17706298828125, 288.9369812011719, 502.95440673828125, 430.261962890625]}, {"class_id": 7, "class_name": "truck", "confidence": 0.2769337594509125, "xyxy": [126.76496124267578, 0.0, 267.1654357910156, 184.41734313964844]}]}
+{"frame_index": 196, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.4836891293525696, "xyxy": [126.45198822021484, 0.0, 266.06719970703125, 195.32501220703125]}, {"class_id": 2, "class_name": "car", "confidence": 0.30662617087364197, "xyxy": [316.6737365722656, 276.56494140625, 504.39111328125, 431.1507568359375]}]}
+{"frame_index": 197, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5675891041755676, "xyxy": [121.9951171875, 0.0, 264.7378234863281, 210.41197204589844]}, {"class_id": 2, "class_name": "car", "confidence": 0.39740249514579773, "xyxy": [318.0602111816406, 261.3923645019531, 502.4715270996094, 432.0]}]}
+{"frame_index": 198, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5741942524909973, "xyxy": [317.8921813964844, 245.4844512939453, 498.8691101074219, 431.1988830566406]}, {"class_id": 2, "class_name": "car", "confidence": 0.4633173942565918, "xyxy": [116.45123291015625, 0.0, 264.3968811035156, 227.66619873046875]}]}
+{"frame_index": 199, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5713322162628174, "xyxy": [112.80220031738281, 0.0, 261.4869689941406, 239.4481964111328]}, {"class_id": 2, "class_name": "car", "confidence": 0.5081431865692139, "xyxy": [317.127685546875, 234.0018768310547, 497.8905944824219, 430.5541687011719]}]}
+{"frame_index": 200, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.7389567494392395, "xyxy": [110.571533203125, 0.0, 261.0876770019531, 260.7922058105469]}, {"class_id": 2, "class_name": "car", "confidence": 0.5720888376235962, "xyxy": [318.14019775390625, 216.2153778076172, 497.1340026855469, 431.320068359375]}]}
+{"frame_index": 201, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6595490574836731, "xyxy": [108.33647918701172, 1.31634521484375, 259.68255615234375, 274.654541015625]}, {"class_id": 2, "class_name": "car", "confidence": 0.6323752999305725, "xyxy": [319.0302429199219, 204.54879760742188, 494.3545227050781, 428.673583984375]}]}
+{"frame_index": 202, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6527705192565918, "xyxy": [103.89058685302734, 11.0642671585083, 257.851806640625, 289.91632080078125]}, {"class_id": 2, "class_name": "car", "confidence": 0.49307534098625183, "xyxy": [317.8251647949219, 194.064208984375, 493.6202087402344, 428.6272888183594]}]}
+{"frame_index": 203, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6757242679595947, "xyxy": [100.22897338867188, 24.396020889282227, 256.3814392089844, 313.1583251953125]}, {"class_id": 2, "class_name": "car", "confidence": 0.6361628770828247, "xyxy": [316.9846496582031, 178.04937744140625, 491.7183837890625, 430.66131591796875]}]}
+{"frame_index": 204, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6473110914230347, "xyxy": [317.6284484863281, 167.8233642578125, 489.3671875, 432.0]}, {"class_id": 2, "class_name": "car", "confidence": 0.525970458984375, "xyxy": [97.27397918701172, 32.47249984741211, 255.352783203125, 328.17181396484375]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.3477047085762024, "xyxy": [97.49466705322266, 29.710996627807617, 256.1143798828125, 327.9815368652344]}]}
+{"frame_index": 205, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.5284314751625061, "xyxy": [94.30529022216797, 49.54827880859375, 253.96424865722656, 355.1707763671875]}, {"class_id": 2, "class_name": "car", "confidence": 0.4205830991268158, "xyxy": [94.62586975097656, 49.22010803222656, 253.9461212158203, 352.4280090332031]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.3676958978176117, "xyxy": [318.7828674316406, 150.13389587402344, 487.44915771484375, 428.20703125]}, {"class_id": 2, "class_name": "car", "confidence": 0.3609822988510132, "xyxy": [319.4507141113281, 152.60691833496094, 486.3366394042969, 429.7908020019531]}]}
+{"frame_index": 206, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.6757790446281433, "xyxy": [91.64703369140625, 60.66390609741211, 251.51620483398438, 372.3628845214844]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.3033003807067871, "xyxy": [318.4212951660156, 140.5477294921875, 484.84747314453125, 427.3210754394531]}]}
+{"frame_index": 207, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.7131747603416443, "xyxy": [88.62004852294922, 71.71846008300781, 251.76519775390625, 389.6595764160156]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.6464752554893494, "xyxy": [319.6470642089844, 129.4464111328125, 483.53387451171875, 426.4603271484375]}]}
+{"frame_index": 208, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.4917803406715393, "xyxy": [83.09169006347656, 87.41121673583984, 249.08445739746094, 413.5931396484375]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.4630228877067566, "xyxy": [317.10784912109375, 116.77701568603516, 480.9674072265625, 405.903076171875]}, {"class_id": 2, "class_name": "car", "confidence": 0.4235665202140808, "xyxy": [83.99063873291016, 87.5542221069336, 249.79791259765625, 411.9149475097656]}, {"class_id": 2, "class_name": "car", "confidence": 0.25832781195640564, "xyxy": [318.3451843261719, 116.56549072265625, 480.9804992675781, 404.7561950683594]}]}
+{"frame_index": 209, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.5259568691253662, "xyxy": [317.8179931640625, 104.29888916015625, 478.2405090332031, 393.0696716308594]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.3497409224510193, "xyxy": [78.55467224121094, 97.75865936279297, 245.89285278320312, 428.0821533203125]}]}
+{"frame_index": 210, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.3838282525539398, "xyxy": [314.9619140625, 94.08369445800781, 474.27862548828125, 367.97235107421875]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.3165646195411682, "xyxy": [73.57221984863281, 115.4628677368164, 244.53099060058594, 430.36260986328125]}, {"class_id": 2, "class_name": "car", "confidence": 0.2956249415874481, "xyxy": [75.32547760009766, 113.79393768310547, 245.4698028564453, 428.8487548828125]}]}
+{"frame_index": 211, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.3777598738670349, "xyxy": [71.70234680175781, 128.0785369873047, 239.97271728515625, 429.3110656738281]}]}
+{"frame_index": 212, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.41477590799331665, "xyxy": [314.4847412109375, 74.4202880859375, 470.3108825683594, 341.3236083984375]}, {"class_id": 2, "class_name": "car", "confidence": 0.3943120837211609, "xyxy": [314.2263488769531, 75.92879486083984, 472.8542785644531, 343.3869323730469]}, {"class_id": 2, "class_name": "car", "confidence": 0.3225868344306946, "xyxy": [69.28948974609375, 140.79698181152344, 242.2431182861328, 427.76690673828125]}]}
+{"frame_index": 213, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.3838023245334625, "xyxy": [68.15632629394531, 159.02835083007812, 240.4314727783203, 427.200439453125]}, {"class_id": 5, "class_name": "bus", "confidence": 0.3087954819202423, "xyxy": [313.2037353515625, 62.37026596069336, 466.8058776855469, 319.8605651855469]}]}
+{"frame_index": 214, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6087403893470764, "xyxy": [66.32938385009766, 170.64593505859375, 243.51475524902344, 429.2062683105469]}, {"class_id": 5, "class_name": "bus", "confidence": 0.5330238342285156, "xyxy": [312.1657409667969, 53.818397521972656, 464.6262512207031, 305.1116638183594]}]}
+{"frame_index": 215, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.7125288248062134, "xyxy": [63.775123596191406, 183.993896484375, 243.07203674316406, 428.8905944824219]}, {"class_id": 5, "class_name": "bus", "confidence": 0.6531530618667603, "xyxy": [311.20782470703125, 45.92063522338867, 463.9569091796875, 290.59197998046875]}]}
+{"frame_index": 216, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.6501595377922058, "xyxy": [310.6201477050781, 31.04367446899414, 461.845947265625, 273.08880615234375]}, {"class_id": 2, "class_name": "car", "confidence": 0.5896520018577576, "xyxy": [60.9778938293457, 204.030517578125, 242.15090942382812, 428.26702880859375]}]}
+{"frame_index": 217, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.503356397151947, "xyxy": [61.740108489990234, 217.7820281982422, 237.51210021972656, 428.3065185546875]}, {"class_id": 5, "class_name": "bus", "confidence": 0.4165309965610504, "xyxy": [311.3083801269531, 24.703079223632812, 460.88519287109375, 263.3004455566406]}]}
+{"frame_index": 218, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.7889200448989868, "xyxy": [309.3729553222656, 10.445856094360352, 457.2105712890625, 245.3083953857422]}, {"class_id": 2, "class_name": "car", "confidence": 0.6963581442832947, "xyxy": [64.32198333740234, 238.0301971435547, 237.1702423095703, 428.1690368652344]}]}
+{"frame_index": 219, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.8399816751480103, "xyxy": [309.73236083984375, 3.657366991043091, 455.3350524902344, 231.2567138671875]}, {"class_id": 2, "class_name": "car", "confidence": 0.7328964471817017, "xyxy": [63.72637939453125, 252.421630859375, 236.501708984375, 430.1172180175781]}]}
+{"frame_index": 220, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.7886979579925537, "xyxy": [65.99533081054688, 266.0655212402344, 236.03050231933594, 430.5928955078125]}, {"class_id": 5, "class_name": "bus", "confidence": 0.6947845816612244, "xyxy": [308.6229553222656, 0.0, 452.09942626953125, 222.70004272460938]}]}
+{"frame_index": 221, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.8159834742546082, "xyxy": [308.8870544433594, 0.0, 448.0163269042969, 206.19500732421875]}, {"class_id": 2, "class_name": "car", "confidence": 0.5834395289421082, "xyxy": [65.09846496582031, 288.6571960449219, 236.8743896484375, 432.0]}]}
+{"frame_index": 222, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.773344099521637, "xyxy": [307.4100036621094, 0.0, 447.21600341796875, 192.44911193847656]}, {"class_id": 2, "class_name": "car", "confidence": 0.6080975532531738, "xyxy": [64.47295379638672, 302.1712341308594, 236.67156982421875, 432.0]}]}
+{"frame_index": 223, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.6595560908317566, "xyxy": [306.8023681640625, 0.0, 444.4377746582031, 175.63482666015625]}, {"class_id": 2, "class_name": "car", "confidence": 0.6356545686721802, "xyxy": [64.54828643798828, 325.2814025878906, 235.3677978515625, 432.0]}]}
+{"frame_index": 224, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.8392210006713867, "xyxy": [309.36688232421875, 0.0, 443.3127746582031, 167.96929931640625]}, {"class_id": 2, "class_name": "car", "confidence": 0.5979651808738708, "xyxy": [63.22108459472656, 340.36004638671875, 233.47987365722656, 431.5250244140625]}]}
+{"frame_index": 225, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.8911104202270508, "xyxy": [309.80450439453125, 0.0, 439.5272521972656, 154.86952209472656]}, {"class_id": 2, "class_name": "car", "confidence": 0.6355061531066895, "xyxy": [68.2040786743164, 357.0934753417969, 231.9781951904297, 430.87750244140625]}]}
+{"frame_index": 226, "size": [768, 432], "objects": [{"class_id": 5, "class_name": "bus", "confidence": 0.7500832080841064, "xyxy": [308.62109375, 0.0, 437.10540771484375, 140.51502990722656]}, {"class_id": 2, "class_name": "car", "confidence": 0.28075578808784485, "xyxy": [69.38908386230469, 379.52703857421875, 226.49383544921875, 429.91253662109375]}]}
+{"frame_index": 227, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.7557239532470703, "xyxy": [307.12176513671875, 0.0, 435.5234069824219, 131.9273223876953]}]}
+{"frame_index": 228, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.777336835861206, "xyxy": [305.25982666015625, 0.0, 433.6263427734375, 116.37301635742188]}]}
+{"frame_index": 229, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.7964212894439697, "xyxy": [305.5957946777344, 0.0, 432.6822509765625, 109.28414154052734]}]}
+{"frame_index": 230, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.8445392847061157, "xyxy": [304.6201477050781, 0.0, 430.4503479003906, 98.49784851074219]}]}
+{"frame_index": 231, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.8746699690818787, "xyxy": [304.08428955078125, 0.01905212365090847, 428.48248291015625, 87.02394104003906]}]}
+{"frame_index": 232, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.7719259262084961, "xyxy": [304.9610595703125, 0.0, 426.594970703125, 76.08660125732422]}]}
+{"frame_index": 233, "size": [768, 432], "objects": []}
+{"frame_index": 234, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5388898849487305, "xyxy": [306.283935546875, 0.0, 418.9476318359375, 56.712852478027344]}]}
+{"frame_index": 235, "size": [768, 432], "objects": []}
+{"frame_index": 236, "size": [768, 432], "objects": []}
+{"frame_index": 237, "size": [768, 432], "objects": []}
+{"frame_index": 238, "size": [768, 432], "objects": []}
+{"frame_index": 239, "size": [768, 432], "objects": []}
+{"frame_index": 240, "size": [768, 432], "objects": []}
+{"frame_index": 241, "size": [768, 432], "objects": []}
+{"frame_index": 242, "size": [768, 432], "objects": []}
+{"frame_index": 243, "size": [768, 432], "objects": []}
+{"frame_index": 244, "size": [768, 432], "objects": []}
+{"frame_index": 245, "size": [768, 432], "objects": []}
+{"frame_index": 246, "size": [768, 432], "objects": []}
+{"frame_index": 247, "size": [768, 432], "objects": []}
+{"frame_index": 248, "size": [768, 432], "objects": []}
+{"frame_index": 249, "size": [768, 432], "objects": []}
+{"frame_index": 250, "size": [768, 432], "objects": []}
+{"frame_index": 251, "size": [768, 432], "objects": []}
+{"frame_index": 252, "size": [768, 432], "objects": []}
+{"frame_index": 253, "size": [768, 432], "objects": []}
+{"frame_index": 254, "size": [768, 432], "objects": []}
+{"frame_index": 255, "size": [768, 432], "objects": []}
+{"frame_index": 256, "size": [768, 432], "objects": []}
+{"frame_index": 257, "size": [768, 432], "objects": []}
+{"frame_index": 258, "size": [768, 432], "objects": []}
+{"frame_index": 259, "size": [768, 432], "objects": []}
+{"frame_index": 260, "size": [768, 432], "objects": []}
+{"frame_index": 261, "size": [768, 432], "objects": []}
+{"frame_index": 262, "size": [768, 432], "objects": []}
+{"frame_index": 263, "size": [768, 432], "objects": []}
+{"frame_index": 264, "size": [768, 432], "objects": []}
+{"frame_index": 265, "size": [768, 432], "objects": []}
+{"frame_index": 266, "size": [768, 432], "objects": []}
+{"frame_index": 267, "size": [768, 432], "objects": []}
+{"frame_index": 268, "size": [768, 432], "objects": []}
+{"frame_index": 269, "size": [768, 432], "objects": []}
+{"frame_index": 270, "size": [768, 432], "objects": []}
+{"frame_index": 271, "size": [768, 432], "objects": []}
+{"frame_index": 272, "size": [768, 432], "objects": []}
+{"frame_index": 273, "size": [768, 432], "objects": []}
+{"frame_index": 274, "size": [768, 432], "objects": []}
+{"frame_index": 275, "size": [768, 432], "objects": []}
+{"frame_index": 276, "size": [768, 432], "objects": []}
+{"frame_index": 277, "size": [768, 432], "objects": []}
+{"frame_index": 278, "size": [768, 432], "objects": []}
+{"frame_index": 279, "size": [768, 432], "objects": []}
+{"frame_index": 280, "size": [768, 432], "objects": []}
+{"frame_index": 281, "size": [768, 432], "objects": []}
+{"frame_index": 282, "size": [768, 432], "objects": []}
+{"frame_index": 283, "size": [768, 432], "objects": []}
+{"frame_index": 284, "size": [768, 432], "objects": []}
+{"frame_index": 285, "size": [768, 432], "objects": []}
+{"frame_index": 286, "size": [768, 432], "objects": []}
+{"frame_index": 287, "size": [768, 432], "objects": []}
+{"frame_index": 288, "size": [768, 432], "objects": []}
+{"frame_index": 289, "size": [768, 432], "objects": []}
+{"frame_index": 290, "size": [768, 432], "objects": []}
+{"frame_index": 291, "size": [768, 432], "objects": []}
+{"frame_index": 292, "size": [768, 432], "objects": []}
+{"frame_index": 293, "size": [768, 432], "objects": []}
+{"frame_index": 294, "size": [768, 432], "objects": []}
+{"frame_index": 295, "size": [768, 432], "objects": []}
+{"frame_index": 296, "size": [768, 432], "objects": []}
+{"frame_index": 297, "size": [768, 432], "objects": []}
+{"frame_index": 298, "size": [768, 432], "objects": []}
+{"frame_index": 299, "size": [768, 432], "objects": []}
+{"frame_index": 300, "size": [768, 432], "objects": []}
+{"frame_index": 301, "size": [768, 432], "objects": []}
+{"frame_index": 302, "size": [768, 432], "objects": []}
+{"frame_index": 303, "size": [768, 432], "objects": []}
+{"frame_index": 304, "size": [768, 432], "objects": []}
+{"frame_index": 305, "size": [768, 432], "objects": []}
+{"frame_index": 306, "size": [768, 432], "objects": []}
+{"frame_index": 307, "size": [768, 432], "objects": []}
+{"frame_index": 308, "size": [768, 432], "objects": []}
+{"frame_index": 309, "size": [768, 432], "objects": []}
+{"frame_index": 310, "size": [768, 432], "objects": []}
+{"frame_index": 311, "size": [768, 432], "objects": []}
+{"frame_index": 312, "size": [768, 432], "objects": []}
+{"frame_index": 313, "size": [768, 432], "objects": []}
+{"frame_index": 314, "size": [768, 432], "objects": []}
+{"frame_index": 315, "size": [768, 432], "objects": []}
+{"frame_index": 316, "size": [768, 432], "objects": []}
+{"frame_index": 317, "size": [768, 432], "objects": []}
+{"frame_index": 318, "size": [768, 432], "objects": []}
+{"frame_index": 319, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.34435319900512695, "xyxy": [189.2159881591797, 2.510735273361206, 321.45501708984375, 74.8838882446289]}]}
+{"frame_index": 320, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.2847428321838379, "xyxy": [183.83961486816406, 1.1539124250411987, 324.3439636230469, 88.49394226074219]}]}
+{"frame_index": 321, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.2661692798137665, "xyxy": [176.37071228027344, 0.0, 325.7495422363281, 111.28083801269531]}]}
+{"frame_index": 322, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.33148714900016785, "xyxy": [172.99160766601562, 0.2678375244140625, 326.5240173339844, 127.91258239746094]}]}
+{"frame_index": 323, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.7379028797149658, "xyxy": [169.31228637695312, 0.0, 328.0226135253906, 144.26162719726562]}]}
+{"frame_index": 324, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8590947985649109, "xyxy": [162.869384765625, 0.0, 327.3271484375, 171.67384338378906]}]}
+{"frame_index": 325, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8902376890182495, "xyxy": [159.42637634277344, 0.0, 324.8366394042969, 190.03793334960938]}]}
+{"frame_index": 326, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.9455329179763794, "xyxy": [153.87001037597656, 0.0, 322.438232421875, 216.37237548828125]}]}
+{"frame_index": 327, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.906599760055542, "xyxy": [149.04942321777344, 0.0, 321.6113586425781, 236.28623962402344]}]}
+{"frame_index": 328, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.8387059569358826, "xyxy": [145.45254516601562, 0.0, 318.74224853515625, 256.21209716796875]}]}
+{"frame_index": 329, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6424901485443115, "xyxy": [139.782958984375, 0.12773437798023224, 317.17327880859375, 288.9305419921875]}]}
+{"frame_index": 330, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5834641456604004, "xyxy": [135.91458129882812, 13.604992866516113, 314.7840270996094, 310.86834716796875]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.265146404504776, "xyxy": [133.7978057861328, 14.380664825439453, 313.987060546875, 311.79925537109375]}]}
+{"frame_index": 331, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.44952526688575745, "xyxy": [131.952392578125, 33.45135498046875, 311.9624328613281, 345.88031005859375]}, {"class_id": 67, "class_name": "cell phone", "confidence": 0.28922030329704285, "xyxy": [129.66354370117188, 32.32331466674805, 311.53399658203125, 346.2526550292969]}]}
+{"frame_index": 332, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.5216655731201172, "xyxy": [127.1596450805664, 50.26409912109375, 310.29559326171875, 370.0760192871094]}]}
+{"frame_index": 333, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.6745374798774719, "xyxy": [123.52459716796875, 64.55973052978516, 308.0918273925781, 396.5003662109375]}]}
+{"frame_index": 334, "size": [768, 432], "objects": [{"class_id": 67, "class_name": "cell phone", "confidence": 0.6853529810905457, "xyxy": [118.23014068603516, 89.3876953125, 307.29083251953125, 425.7742919921875]}, {"class_id": 2, "class_name": "car", "confidence": 0.36773669719696045, "xyxy": [118.77284240722656, 90.29963684082031, 305.4621276855469, 425.7225341796875]}]}
+{"frame_index": 335, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.39837923645973206, "xyxy": [116.2726821899414, 105.77340698242188, 307.2182922363281, 428.4886474609375]}]}
+{"frame_index": 336, "size": [768, 432], "objects": []}
+{"frame_index": 337, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.3994837701320648, "xyxy": [118.62061309814453, 147.11627197265625, 303.3790588378906, 392.3689880371094]}]}
+{"frame_index": 338, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.4072555899620056, "xyxy": [111.19059753417969, 166.275146484375, 302.6039733886719, 427.0948486328125]}]}
+{"frame_index": 339, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6079896092414856, "xyxy": [112.656982421875, 194.92581176757812, 302.77606201171875, 430.878662109375]}]}
+{"frame_index": 340, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5526809692382812, "xyxy": [113.95946502685547, 217.02224731445312, 301.6584167480469, 428.41400146484375]}]}
+{"frame_index": 341, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6652738451957703, "xyxy": [111.92152404785156, 247.5069580078125, 299.1526794433594, 431.8960876464844]}]}
+{"frame_index": 342, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.6745188236236572, "xyxy": [113.974365234375, 270.2808837890625, 297.82562255859375, 432.0]}]}
+{"frame_index": 343, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.7048734426498413, "xyxy": [113.34935760498047, 291.2498474121094, 297.5230407714844, 432.0]}]}
+{"frame_index": 344, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.5047298669815063, "xyxy": [111.17353057861328, 325.08685302734375, 299.26641845703125, 432.0]}]}
+{"frame_index": 345, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.4311956465244293, "xyxy": [113.09425354003906, 349.8484191894531, 297.0732116699219, 431.4830017089844]}]}
+{"frame_index": 346, "size": [768, 432], "objects": [{"class_id": 2, "class_name": "car", "confidence": 0.27193230390548706, "xyxy": [114.55950927734375, 383.6404724121094, 291.4333190917969, 432.0]}]}
+{"frame_index": 347, "size": [768, 432], "objects": []}
+{"frame_index": 348, "size": [768, 432], "objects": []}
+{"frame_index": 349, "size": [768, 432], "objects": []}
+{"frame_index": 350, "size": [768, 432], "objects": []}
+{"frame_index": 351, "size": [768, 432], "objects": []}
+{"frame_index": 352, "size": [768, 432], "objects": []}
+{"frame_index": 353, "size": [768, 432], "objects": []}
+{"frame_index": 354, "size": [768, 432], "objects": []}
+{"frame_index": 355, "size": [768, 432], "objects": []}
+{"frame_index": 356, "size": [768, 432], "objects": []}
+{"frame_index": 357, "size": [768, 432], "objects": []}
+{"frame_index": 358, "size": [768, 432], "objects": []}
+{"frame_index": 359, "size": [768, 432], "objects": []}
+{"frame_index": 360, "size": [768, 432], "objects": []}
+{"frame_index": 361, "size": [768, 432], "objects": []}
+{"frame_index": 362, "size": [768, 432], "objects": []}
+{"frame_index": 363, "size": [768, 432], "objects": []}
+{"frame_index": 364, "size": [768, 432], "objects": []}
+{"frame_index": 365, "size": [768, 432], "objects": []}
+{"frame_index": 366, "size": [768, 432], "objects": []}
+{"frame_index": 367, "size": [768, 432], "objects": []}
+{"frame_index": 368, "size": [768, 432], "objects": []}
+{"frame_index": 369, "size": [768, 432], "objects": []}
+{"frame_index": 370, "size": [768, 432], "objects": []}
+{"frame_index": 371, "size": [768, 432], "objects": []}
+{"frame_index": 372, "size": [768, 432], "objects": []}
+{"frame_index": 373, "size": [768, 432], "objects": []}
+{"frame_index": 374, "size": [768, 432], "objects": []}
+{"frame_index": 375, "size": [768, 432], "objects": []}
+{"frame_index": 376, "size": [768, 432], "objects": []}

@@ -1,0 +1,28 @@
+{
+  "scope": "tiny_coco8_smoke_not_independent_coco_benchmark",
+  "config": {
+    "epochs": 1,
+    "imgsz": 320,
+    "batch": 2,
+    "device": "cpu",
+    "workers": 0,
+    "seed": 42
+  },
+  "initial_checkpoint_sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+  "best_checkpoint_sha256": "c55246f19d6e0c41fc7859995487573efa41342c63ac00080a81fe816a92bc7e",
+  "metrics": {
+    "metrics/precision(B)": 0.641954439421625,
+    "metrics/recall(B)": 0.5499999999999999,
+    "metrics/mAP50(B)": 0.5792374727668845,
+    "metrics/mAP50-95(B)": 0.4460326797385621,
+    "fitness": 0.4460326797385621
+  },
+  "train_images": 4,
+  "validation_images": 4,
+  "versions": {
+    "ultralytics": "8.4.184",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "opencv-python": "5.0.0.93"
+  }
+}

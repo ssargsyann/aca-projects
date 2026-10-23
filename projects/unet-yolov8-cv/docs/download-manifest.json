@@ -1,0 +1,20 @@
+[
+  {
+    "file": "yolov8n.pt",
+    "url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolov8n.pt",
+    "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+    "bytes": 6549796
+  },
+  {
+    "file": "coco8.zip",
+    "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.zip",
+    "sha256": "54c67fe9ef88313e021ec0e92b73c200167bb0a86633e8df8658d832cca828c9",
+    "bytes": 443158
+  },
+  {
+    "file": "traffic_video.mp4",
+    "url": "https://raw.githubusercontent.com/intel-iot-devkit/sample-videos/master/car-detection.mp4",
+    "sha256": "d31e0ebf194cc16e50eea784e7c3b0b1bb7976a4fb9b3fec26cb92a6704cca34",
+    "bytes": 2811553
+  }
+]
