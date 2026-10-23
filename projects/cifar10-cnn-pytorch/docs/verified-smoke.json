@@ -1,0 +1,186 @@
+{
+  "run": {
+    "config": {
+      "epochs": 1,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "validation_fraction": 0.1,
+      "seed": 42,
+      "device": "cpu",
+      "num_workers": 0,
+      "cpu_threads": 2,
+      "train_limit": 1000,
+      "validation_limit": 200
+    },
+    "data_kind": "CIFAR10_SUBSET_SMOKE",
+    "train_samples": 1000,
+    "validation_samples": 200,
+    "best_epoch": 1,
+    "best_validation_accuracy": 0.15,
+    "device": "cpu",
+    "python": "3.12.14",
+    "versions": {
+      "torch": "2.14.1+cpu",
+      "torchvision": "0.29.1+cpu",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0"
+    },
+    "parameter_count": 2640010,
+    "test_used_during_training": false
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "train_loss": 2.906686752319336,
+      "train_accuracy": 0.14,
+      "validation_loss": 2.20137321472168,
+      "validation_accuracy": 0.15
+    }
+  ],
+  "evaluation": {
+    "loss": 2.216175323486328,
+    "accuracy": 0.146,
+    "samples": 500,
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        22,
+        4,
+        0,
+        0,
+        0,
+        0,
+        8,
+        6
+      ],
+      [
+        0,
+        0,
+        38,
+        1,
+        0,
+        0,
+        1,
+        0,
+        5,
+        5
+      ],
+      [
+        3,
+        0,
+        43,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        46,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        48,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        48,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        48,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        42,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        3,
+        0,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11,
+        11
+      ],
+      [
+        0,
+        0,
+        36,
+        5,
+        0,
+        0,
+        0,
+        0,
+        1,
+        8
+      ]
+    ],
+    "split": "official_test_subset",
+    "checkpoint_data_kind": "CIFAR10_SUBSET_SMOKE",
+    "classes": [
+      "airplane",
+      "automobile",
+      "bird",
+      "cat",
+      "deer",
+      "dog",
+      "frog",
+      "horse",
+      "ship",
+      "truck"
+    ],
+    "checkpoint_epoch": 1,
+    "checkpoint_sha256": "ba0cd2d9d32bf1e5ee004e83b11e207f98fd157bb6abf273f8459653f81e40c9",
+    "selection_seed": 44
+  }
+}

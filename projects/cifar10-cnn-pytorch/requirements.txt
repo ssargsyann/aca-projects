@@ -1,5 +1,2 @@
-torch>=2.0.0
-torchvision>=0.15.0
-jupyter>=1.0.0
-matplotlib>=3.5.0
-numpy>=1.21.0
+# Install a compatible torch/torchvision pair first, then run from this directory.
+-e .[notebook,reports]

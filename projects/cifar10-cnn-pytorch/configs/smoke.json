@@ -1,0 +1,13 @@
+{
+  "epochs": 1,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "validation_fraction": 0.1,
+  "seed": 42,
+  "device": "cpu",
+  "num_workers": 0,
+  "cpu_threads": 2,
+  "train_limit": 1000,
+  "validation_limit": 200
+}

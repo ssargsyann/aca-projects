@@ -1,0 +1,81 @@
+{
+  "source": "saved outputs of notebooks/original_experiment.ipynb",
+  "freshly_reproduced": false,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.704,
+      "test_accuracy_percent": 49.19
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.351,
+      "test_accuracy_percent": 58.41
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.205,
+      "test_accuracy_percent": 65.84
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.117,
+      "test_accuracy_percent": 66.99
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.035,
+      "test_accuracy_percent": 69.51
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.967,
+      "test_accuracy_percent": 73.14
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.909,
+      "test_accuracy_percent": 75.6
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.863,
+      "test_accuracy_percent": 74.75
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.819,
+      "test_accuracy_percent": 77.86
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.785,
+      "test_accuracy_percent": 78.92
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.758,
+      "test_accuracy_percent": 80.51
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.729,
+      "test_accuracy_percent": 80.68
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.705,
+      "test_accuracy_percent": 81.06
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.698,
+      "test_accuracy_percent": 81.38
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.688,
+      "test_accuracy_percent": 81.56
+    }
+  ]
+}
