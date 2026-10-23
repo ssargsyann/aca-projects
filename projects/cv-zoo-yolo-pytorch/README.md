@@ -1,139 +1,103 @@
-#The CV Zoo & Anatomy of YOLO
+# The CV Zoo and YOLO Geometry
 
-A production-grade, self-contained PyTorch/torchvision notebook covering two pillars of modern computer vision: an end-to-end inference pipeline across the four major CV tasks, and a from-scratch, vectorized breakdown of how YOLO assigns grid-cell responsibility and matches anchor boxes via IoU.
+An installable project comparing four pretrained vision tasks and separately explaining grid assignment, vectorized IoU, and anchor shapes. Includes an offline synthetic demo, explicit asset/weight retrieval, auditable JSON outputs, visual reports, and two maintained Jupyter workflows. The original notebook is preserved.
 
----
+[Automated checks](https://github.com/ssargsyann/aca-projects/actions/workflows/cv-zoo-checks.yml) · [Verified run](docs/results.md) · [Model/use card](MODEL_CARD.md) · [Geometry notes](docs/geometry-notes.md)
 
-## Table of Contents
+## What was verified
 
-- [Overview](#overview)
-- [Core Features](#core-features)
-  - [Part 1: The CV Zoo](#part-1-the-cv-zoo)
-  - [Part 2: Anatomy of YOLO](#part-2-anatomy-of-yolo)
-- [Mathematical Foundations](#mathematical-foundations)
-  - [Grid Cell Responsibility](#grid-cell-responsibility)
-  - [Intersection over Union (IoU)](#intersection-over-union-iou)
-- [Installation](#installation)
-  - [Virtual Environment Setup](#virtual-environment-setup)
-  - [Install Dependencies](#install-dependencies)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [License](#license)
+All four actual pretrained models ran on the same 768x576 sample with verified official weight files. ResNet-50's top label was `malamute` (softmax 0.3856); Faster R-CNN returned four above-threshold outputs and Mask R-CNN five, including overlapping car/truck hypotheses. DeepLab's class map was restored to original dimensions. These are qualitative predictions on one image, not accuracy/mAP or speed benchmarks.
 
----
+![Four pretrained tasks on the sample image](docs/figures/cv-zoo.png)
 
-## Overview
+Sample source: [Darknet dog.jpg](https://github.com/pjreddie/darknet/blob/master/data/dog.jpg). Model/task outputs can disagree; see the [full report](docs/results.md), not just the montage.
 
-This project demonstrates a full spectrum of computer vision understanding — from a single image-level label, to bounding boxes, to pixel-perfect instance masks, to dense per-pixel semantic maps — followed by a hands-on deconstruction of the mechanics that make single-shot detectors like YOLO fast and trainable. All models use pretrained ImageNet/COCO weights via the modern `torchvision.models` **Weights Enum API**, and all sample assets are fetched automatically at runtime.
+The geometry workflow correctly separates shape-only anchor IoU from cell-centered positional IoU. The three hand-entered teaching boxes map to cells `(2,4)`, `(3,3)`, `(5,1)` on a 7x7 grid. Shape-matched anchors are tall, square, and wide, respectively.
 
-## Core Features
+## Structure
 
-### Part 1: The CV Zoo
+```text
+configs/inference.json         Explicit tasks, thresholds, CPU/device/resize settings
+configs/sample_geometry.json   Image dimensions, teaching boxes, anchor shapes
+src/cv_zoo/
+  geometry.py                 Validated vectorized numerical routines
+  geometry_workflow.py         Offline demo and geometry visualization
+  models.py                   Pinned weight enums and checksum verification
+  postprocess.py              Filtering and original-size semantic alignment
+  inference.py                Four sequential pretrained tasks and montage
+  sample.py                   Explicit checksum-pinned public sample retrieval
+  cli.py                      Command-line interface
+tests/                        Numerical and output-contract regression checks
+notebooks/                    Synthetic geometry, real inference, original notebook
+assets/                       Local image instructions; images ignored
+artifacts/                    Ignored weights, masks, images, and run outputs
+docs/                         Corrected concepts and verified JSON/figures
+```
 
-| Task | Model | Output |
-|---|---|---|
-| **Image Classification** | ResNet-50 (`ResNet50_Weights.DEFAULT`) | Top-5 class labels + confidence |
-| **Object Detection** | Faster R-CNN ResNet50-FPN v2 | Bounding boxes + labels + scores |
-| **Instance Segmentation** | Mask R-CNN ResNet50-FPN v2 | Per-object binary masks + boxes |
-| **Semantic Segmentation** | DeepLabV3 (ResNet50 backbone) | Per-pixel class map |
+## Install
 
-- Automatic device selection (`cuda` → `mps` → `cpu`)
-- Modern, non-deprecated `torchvision.models` weights API
-- High-resolution visualizations via `torchvision.utils.draw_bounding_boxes` / `draw_segmentation_masks`
-- Side-by-side comparison montage across all four tasks
-
-### Part 2: Anatomy of YOLO
-
-- $S \times S$ grid overlay on a real image with ground-truth boxes
-- Vectorized computation of **grid-cell responsibility** for every object center
-- Custom, fully vectorized **IoU** implementation, numerically validated against `torchvision.ops.box_iou`
-- Anchor box template design and IoU-based anchor matching
-- Combined visualization of ground-truth box, responsible cell, and winning anchor
-
-## Mathematical Foundations
-
-### Grid Cell Responsibility
-
-YOLO divides an image of size $W_{img} \times H_{img}$ into an $S \times S$ grid. Each cell has dimensions:
-
-$$
-w_{cell} = \frac{W_{img}}{S}, \qquad h_{cell} = \frac{H_{img}}{S}
-$$
-
-Given an object's ground-truth box center $(x_c, y_c)$, the grid cell **responsible** for detecting that object is indexed by $(i, j)$ (column, row):
-
-$$
-i = \left\lfloor \frac{x_c}{w_{cell}} \right\rfloor, \qquad
-j = \left\lfloor \frac{y_c}{h_{cell}} \right\rfloor
-$$
-
-### Intersection over Union (IoU)
-
-For two axis-aligned boxes $A$ and $B$, IoU quantifies overlap as the ratio of intersection area to union area:
-
-$$
-IoU(A, B) = \frac{\text{Area}(A \cap B)}{\text{Area}(A \cup B)} = \frac{\text{Area}(A \cap B)}{\text{Area}(A) + \text{Area}(B) - \text{Area}(A \cap B)}
-$$
-
-where $IoU \in [0, 1]$, with $0$ indicating no overlap and $1$ indicating a perfect match. During anchor assignment, the anchor template $a^*$ selected for a ground-truth box $g$ is:
-
-$$
-a^* = \underset{a \in \{a_1, \dots, a_B\}}{\arg\max} \; IoU(g, a)
-$$
-
-## Installation
-
-### Virtual Environment Setup
-
-**Using `venv`:**
+Python 3.10 or newer. From the collection root:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate      # On Windows: .venv\Scripts\activate
+cd projects/cv-zoo-yolo-pytorch
+python -m venv .venv
 ```
 
-**Using `conda`:**
+Activate `.venv\Scripts\Activate.ps1` in Windows PowerShell or `source .venv/bin/activate` on macOS/Linux.
+
+For geometry only, without PyTorch/model weights:
 
 ```bash
-conda create -n cv-zoo-yolo python=3.10 -y
-conda activate cv-zoo-yolo
+python -m pip install -e ".[plots]"
+cv-zoo demo --output artifacts/demo
 ```
 
-### Install Dependencies
+For the tested CPU inference route:
 
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -e ".[models,plots]"
 ```
 
-## Usage
+Compatible CUDA installs can be selected through [PyTorch's official instructions](https://pytorch.org/get-started/locally/). Configuration supports cpu/cuda/auto; MPS is not promised for the detection operators. Tested Windows/Python 3.12 CPU versions are listed in `constraints-py312-cpu-tested.txt`, including +cpu wheel versions from the CPU index. It is not a complete cross-platform notebook lock.
 
-Launch Jupyter and open the notebook:
+## Explicit retrieval and pretrained inference
 
 ```bash
-jupyter notebook cv_zoo_yolo.ipynb
+cv-zoo sample --output assets/dog.jpg
+cv-zoo weights --cache-dir artifacts/weights
+cv-zoo infer --image assets/dog.jpg --config configs/inference.json --weights-dir artifacts/weights --output artifacts/inference
+cv-zoo montage --run artifacts/inference --output artifacts/inference/montage.png
 ```
 
-Or run it headlessly end-to-end:
+The sample command verifies the recorded SHA-256 before saving. It preserves existing destinations. The four pinned weight files total about 603 MiB; they are fetched only by the explicit `weights` command, or reused from a chosen cache. Inference validates all selected hashes before loading and never silently downloads. Model construction disables implicit backbone downloads; state dictionaries are loaded with restricted deserialization and strict keys. Use trusted official files only.
+
+For an existing Torch checkpoint cache, pass its checkpoint directory as `--weights-dir`. Choose a new/empty run directory each time. You can select a subset of tasks by editing the JSON configuration. The verified CPU settings are score threshold 0.7, mask threshold 0.5, detector min/max size 640/960, and two Torch threads. The models run sequentially to reduce simultaneous memory use.
+
+## Geometry on an annotated image
 
 ```bash
-jupyter nbconvert --to notebook --execute --inplace cv_zoo_yolo.ipynb
+cv-zoo geometry --image assets/dog.jpg --annotations configs/sample_geometry.json --output artifacts/geometry
 ```
 
-> **Note:** Part 1 downloads pretrained weights (~100–200 MB total) from `download.pytorch.org` on first run — ensure you have an active internet connection.
+Annotation dimensions must exactly match the image. Boxes must be valid finite xyxy coordinates inside it. Centers map to `(column,row)` cells; exact outer boundaries map to the last cell, genuinely outside coordinates are rejected. General pairwise IoU supports empty/zero-area inputs and is tested against Torchvision.
 
-## Project Structure
+Shape matching aligns box and anchor centers, measuring width/height fit independently of location. A separate JSON field reports cell-centered positional IoU. Neither is a complete YOLO assignment/loss implementation. The notes distinguish YOLOv1's shared-cell class representation from per-anchor class predictions and avoid claiming that all YOLO generations use the same design. See [corrected mathematical scope](docs/geometry-notes.md).
 
+## Outputs and interpretation
+
+Inference writes `results.json`, four preview images, compressed instance masks, and an original-size semantic label map. Metadata includes image/weight hashes, exact enums, library versions, coordinate frame, thresholds, and resize policy. Detection/instance boxes retain original-image pixel coordinates. Semantic logits are resized to the original dimensions before argmax; overlays therefore align with the input image.
+
+The task label spaces differ. Model scores are uncalibrated; duplicate/incorrect detections can remain, especially across classes. ResNet classification does not localize an object, and semantic segmentation does not separate individual instances. No dataset benchmark, custom training, real-time guarantee, or production deployment is claimed. Asset provenance and provider terms are recorded separately from software licensing; no unsupported blanket MIT claim is made.
+
+## Notebooks and tests
+
+```bash
+python -m pip install -e ".[notebook]"
+jupyter lab
+python -m unittest discover -s tests -v
 ```
-\cv-zoo-yolo/
-├── cv_zoo_yolo.ipynb      # Main notebook (CV Zoo + Anatomy of YOLO)
-├── README.md                  # Project documentation (this file)
-├── requirements.txt           # Pinned Python dependencies
-├── LICENSE                    # License file
-└── assets/                    # (optional) cached sample images
-    └── dog.jpg
-```
 
-## License
+Open [quickstart.ipynb](notebooks/quickstart.ipynb) for synthetic geometry or [real-inference.ipynb](notebooks/real-inference.ipynb) for all four actual pretrained models plus sample geometry. Select the environment containing this package. Retrieve the image/weights first. `CV_ZOO_IMAGE` and `CV_ZOO_WEIGHTS_DIR` can point notebooks at existing caches. The original notebook remains unchanged as a historical reference, with its conceptual corrections documented separately.
 
-This project is released under the MIT License. See `LICENSE` for details.
+CI runs network-free regression tests and the synthetic geometry command, not large pretrained downloads. See [the validation record](docs/validation.md), [asset notes](assets/README.md), and [use card](MODEL_CARD.md).

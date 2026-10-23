@@ -1,0 +1,9 @@
+assets/*
+!assets/README.md
+artifacts/*
+!artifacts/README.md
+*.pth
+*.pt
+*.egg-info/
+build/
+dist/

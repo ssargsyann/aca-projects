@@ -1,0 +1,120 @@
+{
+  "scope": "educational_geometry_not_detector_training",
+  "image_size": [
+    768,
+    576
+  ],
+  "grid_size": 7,
+  "anchors": [
+    {
+      "name": "wide",
+      "size": [
+        260,
+        120
+      ]
+    },
+    {
+      "name": "tall",
+      "size": [
+        140,
+        300
+      ]
+    },
+    {
+      "name": "square",
+      "size": [
+        220,
+        220
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "name": "dog",
+      "box_xyxy": [
+        130.0,
+        220.0,
+        310.0,
+        540.0
+      ],
+      "center_xy": [
+        220.0,
+        380.0
+      ],
+      "cell_col_row": [
+        2,
+        4
+      ],
+      "shape_ious": [
+        0.32142857142857145,
+        0.7291666666666666,
+        0.5963855421686747
+      ],
+      "shape_winner": "tall",
+      "cell_centered_ious": [
+        0.2885572139303483,
+        0.46717171717171707,
+        0.43353941267387947
+      ],
+      "cell_centered_winner": "tall"
+    },
+    {
+      "name": "bicycle",
+      "box_xyxy": [
+        115.0,
+        120.0,
+        575.0,
+        445.0
+      ],
+      "center_xy": [
+        345.0,
+        282.5
+      ],
+      "cell_col_row": [
+        3,
+        3
+      ],
+      "shape_ious": [
+        0.20869565217391303,
+        0.2809364548494983,
+        0.3237458193979933
+      ],
+      "shape_winner": "square",
+      "cell_centered_ious": [
+        0.20869565217391303,
+        0.2809364548494983,
+        0.3237458193979933
+      ],
+      "cell_centered_winner": "square"
+    },
+    {
+      "name": "truck",
+      "box_xyxy": [
+        460.0,
+        70.0,
+        690.0,
+        175.0
+      ],
+      "center_xy": [
+        575.0,
+        122.5
+      ],
+      "cell_col_row": [
+        5,
+        1
+      ],
+      "shape_ious": [
+        0.7740384615384616,
+        0.2857142857142857,
+        0.4671385237613751
+      ],
+      "shape_winner": "wide",
+      "cell_centered_ious": [
+        0.6973321067157314,
+        0.2857142857142857,
+        0.3976112502408014
+      ],
+      "cell_centered_winner": "wide"
+    }
+  ]
+}

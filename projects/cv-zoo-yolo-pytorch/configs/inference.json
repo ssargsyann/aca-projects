@@ -1,0 +1,10 @@
+{
+  "tasks": ["classification", "detection", "instance", "semantic"],
+  "device": "cpu",
+  "cpu_threads": 2,
+  "top_k": 5,
+  "score_threshold": 0.7,
+  "mask_threshold": 0.5,
+  "detection_min_size": 640,
+  "detection_max_size": 960
+}

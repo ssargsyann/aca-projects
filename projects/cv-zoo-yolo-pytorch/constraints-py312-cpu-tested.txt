@@ -1,0 +1,15 @@
+# Tested Windows/Python 3.12 CPU runtime and plotting packages.
+# Torch +cpu wheels come from the official CPU index; this is not a complete notebook lock.
+filelock==3.32.3
+fsspec==2026.7.0
+jinja2==3.1.6
+markupsafe==3.0.4
+matplotlib==3.11.2
+mpmath==1.3.0
+networkx==3.6.1
+numpy==2.5.4
+pillow==13.0.0
+sympy==1.14.0
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+typing-extensions==4.16.0

@@ -1,0 +1,14 @@
+{
+  "image_size": [768, 576],
+  "grid_size": 7,
+  "objects": [
+    {"name": "dog", "box": [130, 220, 310, 540]},
+    {"name": "bicycle", "box": [115, 120, 575, 445]},
+    {"name": "truck", "box": [460, 70, 690, 175]}
+  ],
+  "anchors": [
+    {"name": "wide", "size": [260, 120]},
+    {"name": "tall", "size": [140, 300]},
+    {"name": "square", "size": [220, 220]}
+  ]
+}
