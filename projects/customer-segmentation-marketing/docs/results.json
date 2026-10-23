@@ -1,0 +1,157 @@
+{
+  "metrics": {
+    "evaluation": "in_sample_descriptive_clustering",
+    "rows": 2240,
+    "input_columns": 29,
+    "features": 16,
+    "missing_feature_values": 24,
+    "pca_components": 7,
+    "explained_variance": 0.8041034342196567,
+    "selected_k": 2,
+    "silhouette": 0.3605050745951158,
+    "candidates": [
+      {
+        "k": 2,
+        "silhouette": 0.3605050745951158,
+        "inertia": 17307.029799631782
+      },
+      {
+        "k": 3,
+        "silhouette": 0.30140396342990317,
+        "inertia": 13913.04857599364
+      },
+      {
+        "k": 4,
+        "silhouette": 0.23082017384375417,
+        "inertia": 12533.800246756531
+      },
+      {
+        "k": 5,
+        "silhouette": 0.20066949531875974,
+        "inertia": 11657.90542543597
+      },
+      {
+        "k": 6,
+        "silhouette": 0.2055500188851203,
+        "inertia": 10837.573945931426
+      },
+      {
+        "k": 7,
+        "silhouette": 0.20646059189212687,
+        "inertia": 10304.203066959271
+      },
+      {
+        "k": 8,
+        "silhouette": 0.19189056196489096,
+        "inertia": 9850.015631583068
+      }
+    ],
+    "silhouette_sample_rows": 2240,
+    "initialization_stability": [
+      {
+        "seed": 43,
+        "adjusted_rand_index": 1.0
+      },
+      {
+        "seed": 44,
+        "adjusted_rand_index": 1.0
+      },
+      {
+        "seed": 45,
+        "adjusted_rand_index": 1.0
+      }
+    ],
+    "gmm_converged": true,
+    "gmm_boundary_rows": 9,
+    "pca_variance_spectrum": [
+      0.40440620056376386,
+      0.12630583869832837,
+      0.07780504189786182,
+      0.06274548266932059,
+      0.05103146545798492,
+      0.043796143239237015,
+      0.03801326169316026,
+      0.03684053733403162,
+      0.026582643122856377,
+      0.026072467338594283,
+      0.02521342950530917,
+      0.023687918419450803,
+      0.019333415079701696,
+      0.016351393524742148,
+      0.013409286508020951,
+      0.008405474947636125
+    ]
+  },
+  "run": {
+    "config": {
+      "features": [
+        "Year_Birth",
+        "Income",
+        "Kidhome",
+        "Teenhome",
+        "Recency",
+        "MntWines",
+        "MntFruits",
+        "MntMeatProducts",
+        "MntFishProducts",
+        "MntSweetProducts",
+        "MntGoldProds",
+        "NumDealsPurchases",
+        "NumWebPurchases",
+        "NumCatalogPurchases",
+        "NumStorePurchases",
+        "NumWebVisitsMonth"
+      ],
+      "variance_threshold": 0.8,
+      "clip_quantiles": [
+        0.01,
+        0.99
+      ],
+      "k_values": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "random_state": 42,
+      "n_init": 10,
+      "silhouette_sample_size": 3000,
+      "stability_seeds": [
+        43,
+        44,
+        45
+      ],
+      "boundary_margin": 0.1,
+      "gmm_reg_covar": 1e-06
+    },
+    "data_sha256": "cd0affa36b1b981e80ba0e27767e9b3ab723f7a3dba948f722af81abc6b990ea",
+    "versions": {
+      "pandas": "2.3.3",
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0"
+    },
+    "feature_medians": {
+      "Year_Birth": 1970.0,
+      "Income": 51381.5,
+      "Kidhome": 0.0,
+      "Teenhome": 0.0,
+      "Recency": 49.0,
+      "MntWines": 173.5,
+      "MntFruits": 8.0,
+      "MntMeatProducts": 67.0,
+      "MntFishProducts": 12.0,
+      "MntSweetProducts": 8.0,
+      "MntGoldProds": 24.0,
+      "NumDealsPurchases": 2.0,
+      "NumWebPurchases": 4.0,
+      "NumCatalogPurchases": 2.0,
+      "NumStorePurchases": 5.0,
+      "NumWebVisitsMonth": 6.0
+    }
+  }
+}

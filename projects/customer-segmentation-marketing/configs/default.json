@@ -1,0 +1,12 @@
+{
+  "features": ["Year_Birth", "Income", "Kidhome", "Teenhome", "Recency", "MntWines", "MntFruits", "MntMeatProducts", "MntFishProducts", "MntSweetProducts", "MntGoldProds", "NumDealsPurchases", "NumWebPurchases", "NumCatalogPurchases", "NumStorePurchases", "NumWebVisitsMonth"],
+  "variance_threshold": 0.8,
+  "clip_quantiles": [0.01, 0.99],
+  "k_values": [2, 3, 4, 5, 6, 7, 8],
+  "random_state": 42,
+  "n_init": 10,
+  "silhouette_sample_size": 3000,
+  "stability_seeds": [43, 44, 45],
+  "boundary_margin": 0.1,
+  "gmm_reg_covar": 0.000001
+}

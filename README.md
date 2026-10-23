@@ -31,7 +31,9 @@ A collection of seven machine learning, computer vision, and natural language pr
 
 Each directory under `projects/` contains a self-contained project. The original Git histories were preserved during consolidation; the import manifest records the imported revisions. Projects can now evolve independently inside this collection.
 
-The [ICU mortality project](projects/icu-mortality-prediction/README.md) now includes a Python package, configurable training, saved-pipeline prediction, optional SHAP plots, and synthetic-data tests. Its original notebook is retained under `notebooks/`. A run on the recovered local dataset achieved validation ROC-AUC 0.8926; see its [run report](projects/icu-mortality-prediction/docs/real-data-results.md) for methodology and limitations. Raw data and model artifacts remain local. The other six projects retain their original imported layout.
+The [ICU mortality project](projects/icu-mortality-prediction/README.md) now includes a Python package, configurable training, saved-pipeline prediction, optional SHAP plots, and synthetic-data tests. Its original notebook is retained under `notebooks/`. A run on the recovered local dataset achieved validation ROC-AUC 0.8926; see its [run report](projects/icu-mortality-prediction/docs/real-data-results.md) for methodology and limitations. Raw data and model artifacts remain local.
+
+The [customer segmentation project](projects/customer-segmentation-marketing/README.md) also has an installable package, saved-model inference, independent GMM membership diagnostics, synthetic/real Jupyter workflows, and verified aggregate reports. The source cohort's best tested solution was K=2 with in-sample silhouette 0.3605; see its [results](projects/customer-segmentation-marketing/docs/results.md). The other five projects retain their original imported layout.
 
 To try the ICU pipeline without a dataset download, install that project and run `icu-mortality demo`, or open its `notebooks/quickstart.ipynb`. The demo uses explicitly synthetic records and arbitrary labels.
 
