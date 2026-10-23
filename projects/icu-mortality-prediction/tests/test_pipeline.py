@@ -12,6 +12,7 @@ from icu_mortality.data import FeatureSelector, validate_target
 from icu_mortality.predict import predict
 from icu_mortality.train import train
 from icu_mortality.demo import make_demo_data, run_demo
+from icu_mortality.report import create_report
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,6 +55,10 @@ class PipelineTests(unittest.TestCase):
             self.assertEqual(len(pd.read_csv(output / "predictions.csv")), 12)
             self.assertNotIn("hospital_death", pd.read_csv(output / "synthetic_inference.csv").columns)
             self.assertTrue((output / "model/pipeline.joblib").exists())
+            changed = output / "changed.csv"
+            changed.write_text("hospital_death,age\n0,50\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "checksum"):
+                create_report(output / "model", changed, output / "report")
             with self.assertRaisesRegex(ValueError, "empty or new"):
                 run_demo(output)
 

@@ -25,6 +25,14 @@ Run date: 2026-10-23. This report records an actual run of the maintained pipeli
 
 These are metrics from one internal validation split, not an independent external test. With the default threshold, the model recovers about 77% of positive validation labels but only about 31% of positive predictions match a positive label. Class weighting favors positive-class detection. An always-negative classifier would achieve about 91.37% accuracy and zero positive-class recall on this validation partition; accuracy alone is therefore not a useful success criterion. Scores have not been calibrated and the threshold has not been clinically selected.
 
+## Aggregate validation figures
+
+![ROC and precision-recall curves](figures/validation-curves.png)
+
+![Confusion matrix](figures/confusion-matrix.png)
+
+Recreate these with `icu-mortality report --run artifacts/real-data-run --data data/icu_train.csv --output artifacts/real-data-report`. The input checksum must match the training run. Figures contain aggregate validation diagnostics only.
+
 ## Inference check
 
 The saved pipeline reloaded successfully and wrote predictions for all 13,757 rows in the separate local `icu_hidden_test.csv` (185 columns, no target). No missing required features were reported. A local `icu_labels.csv` also exists, but its row correspondence to the test file has not been verified; it was not used to calculate hidden-test metrics. Equal row counts alone do not establish correct alignment.

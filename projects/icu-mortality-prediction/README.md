@@ -2,11 +2,15 @@
 
 An educational classification project using tabular ICU features, XGBoost, and optional SHAP explanations. The original notebook is preserved in [notebooks](notebooks/README.md); maintained training and inference code lives in a Python package.
 
+[Automated checks](https://github.com/ssargsyann/aca-projects/actions/workflows/icu-checks.yml) · [Model card](MODEL_CARD.md) · [Real-data results](docs/real-data-results.md) · [Data provenance](docs/data-provenance.md)
+
 ## Scope and results
 
 The target is `hospital_death` (0 or 1). The recovered local dataset has now been used for an actual training and validation run: **ROC-AUC 0.8926**, **average precision 0.5393**, and **positive-class recall 0.7697** on a stratified 20% validation partition. See the [real-data run report](docs/real-data-results.md) for precision, sample counts, reproducibility details, and limits. Prediction also completed on 13,757 unlabeled test rows; no hidden-test accuracy is claimed.
 
 Raw datasets, trained models, and row-level predictions remain local and are excluded from Git. Dataset provenance, redistribution rights, and feature timing still need confirmation. This project is not clinically validated or ready for patient-care use.
+
+![Internal validation ROC and precision-recall curves](docs/figures/validation-curves.png)
 
 ## Structure
 
@@ -18,6 +22,7 @@ src/icu_mortality/
   train.py                  Training, validation metrics, and run metadata
   predict.py                Saved-pipeline inference
   explain.py                Optional SHAP plots
+  report.py                 Checksum-verified validation charts
   cli.py                    Command-line interface
 notebooks/                  Original experiment, preserved for reference
 tests/                      Synthetic-data regression tests
@@ -41,6 +46,14 @@ python -m pip install -e .
 ```
 
 For notebooks and SHAP, install `python -m pip install -e ".[notebook]"`. Dependency ranges are in `pyproject.toml`; each training run records the actual versions.
+
+For the tested Python 3.12 runtime, report, and SHAP versions, install with:
+
+```bash
+python -m pip install -c constraints-py312-tested.txt -e ".[reports,explain]"
+```
+
+These constraints record the tested Windows environment, not a complete cross-platform Jupyter lock. Other supported Python versions resolve compatible dependencies from the declared ranges.
 
 ## Data
 
@@ -132,3 +145,14 @@ icu-mortality --help
 Tests use synthetic data to cover training-only missingness selection, invalid targets, schema errors, excluded columns, serialization, and unseen categories. They do not establish ICU predictive quality. GitHub Actions runs these checks when this project changes.
 
 See the [validation record](docs/validation.md) for completed checks and remaining limits.
+
+## Recreate validation charts
+
+```bash
+python -m pip install -e ".[reports]"
+icu-mortality report --run artifacts/real-data-run --data data/icu_train.csv --output artifacts/real-data-report
+```
+
+The report verifies the training-file checksum against `run.json`, reconstructs the recorded validation split, and writes ROC/precision-recall curves, a confusion matrix, and aggregate metrics. It does not train a new model or evaluate the hidden test set. Only load trusted run directories.
+
+For the full real-data Jupyter workflow, open [notebooks/real-data-workflow.ipynb](notebooks/real-data-workflow.ipynb). It trains on your authorized local CSV and generates the same diagnostics. Both maintained notebooks leave raw records and model artifacts local.

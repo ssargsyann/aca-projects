@@ -1,4 +1,8 @@
-# Original exploration
+# Notebooks
+
+- `quickstart.ipynb`: maintained synthetic demonstration requiring no dataset download.
+- `real-data-workflow.ipynb`: maintained training, aggregate validation plots, and optional hidden-file inference using your authorized local CSVs.
+- `original_experiment.ipynb`: unchanged historical experiment, with the limitations below.
 
 For a maintained, immediately runnable Jupyter example, open `quickstart.ipynb`. It generates explicitly synthetic data and uses the packaged pipeline. The notes below apply to the historical notebook only.
 

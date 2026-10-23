@@ -12,3 +12,9 @@ Core tests cover train-only missingness selection, invalid labels, missing featu
 Real-data training and saved-model inference have now been verified on the recovered local CSVs. See [the real-data run report](real-data-results.md) for the exact split and metrics. Dataset provenance, licensing, feature timing, site effects, and external validation still need review. The historical notebook is preserved unchanged and is not the maintained training entry point.
 
 The maintained `demo` command and Jupyter quickstart now provide a dataset-free entry point. GitHub Actions additionally runs the command-line demo. Every generated demo run includes synthetic-data notices and a configuration marker; no synthetic scores are claimed as ICU benchmarks.
+
+The checksum-verified `report` command reconstructed the real-data validation split and reproduced ROC-AUC 0.892606 and average precision 0.539299. Its aggregate ROC/precision-recall and confusion-matrix figures are included in the run report. The regression suite checks rejection of a mismatched report dataset; GitHub Actions also runs reporting on the synthetic demo.
+
+Tested runtime versions are recorded in `constraints-py312-tested.txt`. The model card and data-provenance note document intended use, remaining evidence gaps, and relevant official upstream references without asserting an unverified local download source.
+
+Both maintained Jupyter notebooks (`quickstart.ipynb` and `real-data-workflow.ipynb`) were executed end to end with a fresh workspace test kernel in the installed notebook environment. All cells completed successfully, including synthetic SHAP plots, actual local-data training, validation charts, and optional inference on the supplied hidden-test file. Published notebook sources have cleared outputs; executed copies and generated artifacts remain local. Documentation links were checked and aggregate figures were visually inspected.

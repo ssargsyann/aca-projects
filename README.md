@@ -35,6 +35,8 @@ The [ICU mortality project](projects/icu-mortality-prediction/README.md) now inc
 
 To try the ICU pipeline without a dataset download, install that project and run `icu-mortality demo`, or open its `notebooks/quickstart.ipynb`. The demo uses explicitly synthetic records and arbitrary labels.
 
+The ICU project also provides an executed-and-verified real-data notebook workflow, a model card, tested-version constraints, and reproducible aggregate validation charts. See its README for installation and the provenance note for the remaining data-source limitations.
+
 ## Source history
 
 The seven original repository histories are included as ancestors of the import commits. See [the import manifest](docs/import-manifest.json) for source URLs and exact imported revisions. The original repositories are retained.

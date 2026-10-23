@@ -24,6 +24,10 @@ def main():
     explaining.add_argument("--data", required=True)
     explaining.add_argument("--output", default="artifacts/explanations")
     explaining.add_argument("--max-rows", type=int, default=100)
+    reporting = commands.add_parser("report", help="Recreate the recorded validation split and save aggregate charts")
+    reporting.add_argument("--run", required=True, help="Directory containing pipeline.joblib and run.json")
+    reporting.add_argument("--data", required=True, help="The exact original training CSV")
+    reporting.add_argument("--output", default="artifacts/report")
     args = parser.parse_args()
     if args.command == "demo":
         from .demo import run_demo
@@ -35,6 +39,9 @@ def main():
         from .predict import predict
         result = predict(args.model, args.data, args.output)
         print(f"Wrote {len(result)} predictions to {args.output}")
+    elif args.command == "report":
+        from .report import create_report
+        print(json.dumps(create_report(args.run, args.data, args.output), indent=2))
     else:
         from .explain import explain
         explain(args.model, args.data, args.output, args.max_rows)
