@@ -1,0 +1,9 @@
+{
+  "model_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "real_seeded_repeat_and_record_match": true,
+  "real_cached_uncached_greedy_match": true,
+  "real_greedy_hf_reference_match": true,
+  "reference_length": 8,
+  "repeat_length": 24,
+  "scope": "single_prompt_checks_not_exhaustive_backend_equivalence"
+}

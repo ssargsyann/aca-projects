@@ -1,0 +1,3 @@
+# Local GPT-2 assets
+
+Install the `gpt2` extra, then explicitly run `llm-decoding fetch-model --output assets/gpt2`. It retrieves the fixed public revision, checks upstream file identities and writes a manifest. Use `llm-decoding verify-model --model-dir assets/gpt2` to recheck an existing directory. Generation uses verified local files only and never substitutes a different/missing model. The weight download is about 523 MiB plus tokenizer files; outputs are preserved, so choose a new/empty destination. See [provenance](../docs/provenance.md) for revision, hashes, source and terms. Weights/download caches remain ignored.

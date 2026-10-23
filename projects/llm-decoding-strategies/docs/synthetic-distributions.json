@@ -1,0 +1,152 @@
+{
+  "prompt": null,
+  "scope": "synthetic_logits_only_no_language_model",
+  "distributions": [
+    {
+      "name": "greedy",
+      "config": {
+        "strategy": "greedy",
+        "temperature": 1.0,
+        "top_k": 0,
+        "top_p": 1.0,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 1,
+      "entropy_nats": 0.0,
+      "top_tokens": [
+        {
+          "id": 3,
+          "text": "token-3",
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "name": "temperature",
+      "config": {
+        "strategy": "sample",
+        "temperature": 0.7,
+        "top_k": 0,
+        "top_p": 1.0,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 10,
+      "entropy_nats": 0.7068432246319789,
+      "top_tokens": [
+        {
+          "id": 3,
+          "text": "token-3",
+          "probability": 0.6621139282453701
+        },
+        {
+          "id": 9,
+          "text": "token-9",
+          "probability": 0.32413235124901185
+        },
+        {
+          "id": 4,
+          "text": "token-4",
+          "probability": 0.00911319490135151
+        },
+        {
+          "id": 5,
+          "text": "token-5",
+          "probability": 0.004461288555873581
+        },
+        {
+          "id": 0,
+          "text": "token-0",
+          "probability": 0.00012543207107892449
+        },
+        {
+          "id": 7,
+          "text": "token-7",
+          "probability": 3.0059925837102738e-05
+        },
+        {
+          "id": 1,
+          "text": "token-1",
+          "probability": 1.4715585980454192e-05
+        },
+        {
+          "id": 8,
+          "text": "token-8",
+          "probability": 7.2038923822245834e-06
+        }
+      ]
+    },
+    {
+      "name": "top-k",
+      "config": {
+        "strategy": "sample",
+        "temperature": 0.7,
+        "top_k": 3,
+        "top_p": 1.0,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 3,
+      "entropy_nats": 0.679507457933197,
+      "top_tokens": [
+        {
+          "id": 3,
+          "text": "token-3",
+          "probability": 0.6652008096344576
+        },
+        {
+          "id": 9,
+          "text": "token-9",
+          "probability": 0.3256435082870812
+        },
+        {
+          "id": 4,
+          "text": "token-4",
+          "probability": 0.009155682078461133
+        }
+      ]
+    },
+    {
+      "name": "top-p",
+      "config": {
+        "strategy": "sample",
+        "temperature": 0.7,
+        "top_k": 0,
+        "top_p": 0.9,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 2,
+      "entropy_nats": 0.6332202805406936,
+      "top_tokens": [
+        {
+          "id": 3,
+          "text": "token-3",
+          "probability": 0.6713474534827301
+        },
+        {
+          "id": 9,
+          "text": "token-9",
+          "probability": 0.32865254651727005
+        }
+      ]
+    }
+  ],
+  "logits": [
+    2.0,
+    0.5,
+    -1.0,
+    8.0,
+    5.0,
+    4.5,
+    -3.0,
+    1.0,
+    0.0,
+    7.5
+  ]
+}

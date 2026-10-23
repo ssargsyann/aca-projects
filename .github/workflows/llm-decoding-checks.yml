@@ -1,0 +1,27 @@
+name: LLM decoding checks
+on:
+  push:
+    paths: ["projects/llm-decoding-strategies/**", ".github/workflows/llm-decoding-checks.yml"]
+  pull_request:
+    paths: ["projects/llm-decoding-strategies/**", ".github/workflows/llm-decoding-checks.yml"]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    defaults:
+      run:
+        working-directory: projects/llm-decoding-strategies
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -e ".[gpt2]"
+      - run: python -m unittest discover -s tests -v
+      - run: llm-decoding demo --output artifacts/ci-demo

@@ -1,0 +1,48 @@
+{
+  "prompts": [
+    "What is the capital of France? It is the city of",
+    "Deep learning is fundamentally about"
+  ],
+  "seeds": [
+    7,
+    42
+  ],
+  "max_new_tokens": 24,
+  "strategies": [
+    {
+      "name": "greedy",
+      "strategy": "greedy",
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    {
+      "name": "temperature",
+      "strategy": "sample",
+      "temperature": 0.7,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    {
+      "name": "top-k",
+      "strategy": "sample",
+      "temperature": 0.7,
+      "top_k": 50,
+      "top_p": 1.0
+    },
+    {
+      "name": "top-p",
+      "strategy": "sample",
+      "temperature": 0.7,
+      "top_k": 0,
+      "top_p": 0.9
+    },
+    {
+      "name": "combined",
+      "strategy": "sample",
+      "temperature": 0.7,
+      "top_k": 50,
+      "top_p": 0.9
+    }
+  ]
+}

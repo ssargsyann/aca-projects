@@ -1,0 +1,58 @@
+{
+  "scope": "small_predeclared_qualitative_comparison_no_quality_benchmark",
+  "runs": 20,
+  "prompts": 2,
+  "seeds": [
+    7,
+    42
+  ],
+  "strategies": [
+    "greedy",
+    "temperature",
+    "top-k",
+    "top-p",
+    "combined"
+  ],
+  "generated_tokens": 480,
+  "model_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "runtime": {
+    "device": "cpu",
+    "cpu_threads": 2,
+    "dtype": "float32",
+    "attention_implementation": "eager",
+    "parameters": 124439808,
+    "versions": {
+      "torch": "2.14.1+cpu",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.8.0"
+    }
+  },
+  "observations": [
+    {
+      "strategy": "greedy",
+      "runs": 4,
+      "mean_entropy_nats": 0.0
+    },
+    {
+      "strategy": "temperature",
+      "runs": 4,
+      "mean_entropy_nats": 1.9841002749883037
+    },
+    {
+      "strategy": "top-k",
+      "runs": 4,
+      "mean_entropy_nats": 1.585757911309116
+    },
+    {
+      "strategy": "top-p",
+      "runs": 4,
+      "mean_entropy_nats": 1.5173272119948122
+    },
+    {
+      "strategy": "combined",
+      "runs": 4,
+      "mean_entropy_nats": 1.3521150122166157
+    }
+  ]
+}

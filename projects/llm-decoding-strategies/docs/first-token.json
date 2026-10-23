@@ -1,0 +1,265 @@
+{
+  "prompt": "What is the capital of France? It is the city of",
+  "scope": "same_fixed_next_token_logits_under_each_filter",
+  "distributions": [
+    {
+      "name": "greedy",
+      "config": {
+        "strategy": "greedy",
+        "temperature": 1.0,
+        "top_k": 0,
+        "top_p": 1.0,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 1,
+      "entropy_nats": 0.0,
+      "top_tokens": [
+        {
+          "id": 6342,
+          "text": " Paris",
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "name": "temperature",
+      "config": {
+        "strategy": "sample",
+        "temperature": 0.7,
+        "top_k": 0,
+        "top_p": 1.0,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 50257,
+      "entropy_nats": 2.6487448691660562,
+      "top_tokens": [
+        {
+          "id": 6342,
+          "text": " Paris",
+          "probability": 0.4910468938595212
+        },
+        {
+          "id": 45996,
+          "text": " Marse",
+          "probability": 0.11159282061067181
+        },
+        {
+          "id": 262,
+          "text": " the",
+          "probability": 0.09910893824548102
+        },
+        {
+          "id": 9281,
+          "text": " Saint",
+          "probability": 0.025639048833144367
+        },
+        {
+          "id": 4881,
+          "text": " France",
+          "probability": 0.017091876905916258
+        },
+        {
+          "id": 18460,
+          "text": " Nice",
+          "probability": 0.015169720728074354
+        },
+        {
+          "id": 35193,
+          "text": " Lyon",
+          "probability": 0.015046551529544299
+        },
+        {
+          "id": 5575,
+          "text": " Mont",
+          "probability": 0.014178809264543285
+        }
+      ]
+    },
+    {
+      "name": "top-k",
+      "config": {
+        "strategy": "sample",
+        "temperature": 0.7,
+        "top_k": 50,
+        "top_p": 1.0,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 50,
+      "entropy_nats": 1.9514754134938066,
+      "top_tokens": [
+        {
+          "id": 6342,
+          "text": " Paris",
+          "probability": 0.537825343064428
+        },
+        {
+          "id": 45996,
+          "text": " Marse",
+          "probability": 0.12222345315482545
+        },
+        {
+          "id": 262,
+          "text": " the",
+          "probability": 0.10855032254389141
+        },
+        {
+          "id": 9281,
+          "text": " Saint",
+          "probability": 0.028081493655627003
+        },
+        {
+          "id": 4881,
+          "text": " France",
+          "probability": 0.018720095118184704
+        },
+        {
+          "id": 18460,
+          "text": " Nice",
+          "probability": 0.01661482916762362
+        },
+        {
+          "id": 35193,
+          "text": " Lyon",
+          "probability": 0.016479926539620545
+        },
+        {
+          "id": 5575,
+          "text": " Mont",
+          "probability": 0.015529520810144155
+        }
+      ]
+    },
+    {
+      "name": "top-p",
+      "config": {
+        "strategy": "sample",
+        "temperature": 0.7,
+        "top_k": 0,
+        "top_p": 0.9,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 40,
+      "entropy_nats": 1.8759134679391662,
+      "top_tokens": [
+        {
+          "id": 6342,
+          "text": " Paris",
+          "probability": 0.5449860603898881
+        },
+        {
+          "id": 45996,
+          "text": " Marse",
+          "probability": 0.12385076136904338
+        },
+        {
+          "id": 262,
+          "text": " the",
+          "probability": 0.10999558388262905
+        },
+        {
+          "id": 9281,
+          "text": " Saint",
+          "probability": 0.028455376442553533
+        },
+        {
+          "id": 4881,
+          "text": " France",
+          "probability": 0.01896933831799983
+        },
+        {
+          "id": 18460,
+          "text": " Nice",
+          "probability": 0.016836042423217474
+        },
+        {
+          "id": 35193,
+          "text": " Lyon",
+          "probability": 0.01669934367385632
+        },
+        {
+          "id": 5575,
+          "text": " Mont",
+          "probability": 0.015736284046862753
+        }
+      ]
+    },
+    {
+      "name": "combined",
+      "config": {
+        "strategy": "sample",
+        "temperature": 0.7,
+        "top_k": 50,
+        "top_p": 0.9,
+        "max_new_tokens": 24,
+        "seed": 42,
+        "use_cache": true
+      },
+      "eligible_tokens": 12,
+      "entropy_nats": 1.4344762914362719,
+      "top_tokens": [
+        {
+          "id": 6342,
+          "text": " Paris",
+          "probability": 0.5949666688555174
+        },
+        {
+          "id": 45996,
+          "text": " Marse",
+          "probability": 0.1352091003469757
+        },
+        {
+          "id": 262,
+          "text": " the",
+          "probability": 0.12008326613830528
+        },
+        {
+          "id": 9281,
+          "text": " Saint",
+          "probability": 0.031065015719748797
+        },
+        {
+          "id": 4881,
+          "text": " France",
+          "probability": 0.02070901413768177
+        },
+        {
+          "id": 18460,
+          "text": " Nice",
+          "probability": 0.018380073923515955
+        },
+        {
+          "id": 35193,
+          "text": " Lyon",
+          "probability": 0.01823083854768646
+        },
+        {
+          "id": 5575,
+          "text": " Mont",
+          "probability": 0.017179456833864865
+        }
+      ]
+    }
+  ],
+  "prompt_token_ids": [
+    2061,
+    318,
+    262,
+    3139,
+    286,
+    4881,
+    30,
+    632,
+    318,
+    262,
+    1748,
+    286
+  ]
+}

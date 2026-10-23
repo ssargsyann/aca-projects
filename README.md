@@ -1,58 +1,52 @@
 # ACA Projects
 
-A collection of seven machine learning, computer vision, and natural language processing projects by Sargis Sargsyan.
+Seven machine learning, computer vision and language-model projects by **Sargis Sargsyan**, maintained together with installable Python packages, configurable workflows, executable notebooks, focused tests and measured reports.
 
 ## Projects
 
-| Project | Focus |
-| --- | --- |
-| [icu-mortality-prediction](projects/icu-mortality-prediction/README.md) | ICU mortality prediction and model explainability |
-| [customer-segmentation-marketing](projects/customer-segmentation-marketing/README.md) | Customer segmentation for marketing |
-| [cifar10-cnn-pytorch](projects/cifar10-cnn-pytorch/README.md) | CIFAR-10 image classification with a CNN |
-| [cv-zoo-yolo-pytorch](projects/cv-zoo-yolo-pytorch/README.md) | Four pretrained vision tasks and YOLO grid/anchor geometry |
-| [unet-yolov8-cv](projects/unet-yolov8-cv/README.md) | Computer vision with U-Net and YOLOv8 |
-| [seq2seq-transformer](projects/seq2seq-transformer/README.md) | Sequence-to-sequence Transformer implementation |
-| [llm-decoding-strategies](projects/llm-decoding-strategies/README.md) | Language model decoding strategies |
+| Project | Focus | Maintained workflow |
+|---|---|---|
+| [ICU mortality prediction](projects/icu-mortality-prediction/README.md) | Tabular classification and explainability | Train, saved-pipeline prediction, SHAP and validation reports |
+| [Customer segmentation](projects/customer-segmentation-marketing/README.md) | Marketing cohort analysis | Preprocess, PCA, K-Means/GMM, saved-model inference and diagnostics |
+| [CIFAR-10 CNN](projects/cifar10-cnn-pytorch/README.md) | Image classification | Configurable training, validation-selected checkpoints, separate test evaluation |
+| [CV Zoo and YOLO geometry](projects/cv-zoo-yolo-pytorch/README.md) | Pretrained vision tasks and detection concepts | Four-model inference, IoU/grid/anchor calculations and visual reports |
+| [U-Net and YOLOv8](projects/unet-yolov8-cv/README.md) | Segmentation and object detection | Synthetic U-Net training, local COCO8 fine-tuning, image/video inference |
+| [Seq2Seq Transformer](projects/seq2seq-transformer/README.md) | Character-level date normalization | Disjoint datasets, encoder-decoder training, greedy evaluation and attention |
+| [LLM decoding strategies](projects/llm-decoding-strategies/README.md) | Raw-logit language-model sampling | Temperature/Top-K/Top-P, local GPT-2 generation and reproducible comparisons |
+
+[Verification scope and results](docs/project-status.md) · [GitHub checks](https://github.com/ssargsyann/aca-projects/actions) · [Original source revisions](docs/import-manifest.json)
 
 ## Getting started
 
-1. Clone this repository:
+```bash
+git clone https://github.com/ssargsyann/aca-projects.git
+cd aca-projects
+```
 
-   ```bash
-   git clone https://github.com/ssargsyann/aca-projects.git
-   cd aca-projects
-   ```
+Choose a project above and follow its README. Create a separate Python environment for that project; dependency sets and optional model/data requirements differ. Each guide provides installation, command examples, dataset/model access, notebook instructions and the scope of verified runs.
 
-2. Choose a project under `projects/` and read its README.
-3. Create a separate Python environment for that project and install its own `requirements.txt`. Dependencies may differ between projects.
-4. Open the project's notebook from its project directory. Follow its instructions for datasets, runtime, and any required model downloads.
+Several projects have synthetic demos that require no dataset or model download. For example, after installing the relevant project, run `icu-mortality demo`, `cv-zoo demo`, or `llm-decoding demo` with the arguments documented in its README. Real-model commands require the explicitly prepared local assets described there.
 
-## Repository layout
+## Layout
 
-Each directory under `projects/` contains a self-contained project. The original Git histories were preserved during consolidation; the import manifest records the imported revisions. Projects can now evolve independently inside this collection.
+```text
+projects/<project>/
+  src/             Project-specific Python package and commands
+  configs/         Reproducible workflow settings
+  tests/           Focused regression checks
+  notebooks/       Maintained workflows and preserved original notebook
+  docs/            Measured results, figures, provenance and validation
+  README.md        Setup and execution guide
+```
 
-The [ICU mortality project](projects/icu-mortality-prediction/README.md) now includes a Python package, configurable training, saved-pipeline prediction, optional SHAP plots, and synthetic-data tests. Its original notebook is retained under `notebooks/`. A run on the recovered local dataset achieved validation ROC-AUC 0.8926; see its [run report](projects/icu-mortality-prediction/docs/real-data-results.md) for methodology and limitations. Raw data and model artifacts remain local.
+Project-specific data, assets and output directories are documented where applicable. Large datasets, weights and local run outputs are ignored; committed reports contain small figures and auditable aggregate/prediction records. Source access, hashes and licensing notes are recorded per project rather than assumed to be shared by the whole collection.
 
-The [customer segmentation project](projects/customer-segmentation-marketing/README.md) also has an installable package, saved-model inference, independent GMM membership diagnostics, synthetic/real Jupyter workflows, and verified aggregate reports. The source cohort's best tested solution was K=2 with in-sample silhouette 0.3605; see its [results](projects/customer-segmentation-marketing/docs/results.md).
+## Evidence and reproducibility
 
-The [CIFAR-10 CNN project](projects/cifar10-cnn-pytorch/README.md) now has configurable training, validation-selected checkpoints, separate test evaluation, single-image inference, synthetic/real smoke notebooks, and automated checks. Its original 81.56% notebook log is preserved as historical evidence; the maintained verification is a short CPU smoke run, not a fresh full benchmark.
+Each project has an automated workflow and documented local validation. Lightweight checks are separate from real-data/model experiments. Reports distinguish fresh measured runs, historical notebook logs, synthetic demonstrations and small execution checks. They also disclose limitations such as incomplete source provenance, tiny datasets, pretrained overlap, qualitative predictions and unverified full-training presets.
 
-The [CV Zoo project](projects/cv-zoo-yolo-pytorch/README.md) now provides four pretrained vision tasks, explicit verified weight-cache handling, tested IoU/grid/anchor calculations, two executable notebooks, and a real-image qualitative report. It distinguishes YOLOv1 cell-shared classes from anchor-based output layouts; the geometry is educational, with no YOLO training or accuracy benchmark claimed.
-
-The [U-Net and YOLOv8 project](projects/unet-yolov8-cv/README.md) now includes fixed synthetic train/validation/test sets, validation-selected U-Net checkpoints, local COCO8 YOLOv8n fine-tuning, bounded-memory image/video prediction, explicit checksum-pinned assets, maintained notebooks and regression checks. The width-8 synthetic smoke reached test IoU 0.9022; tiny COCO8 metrics and unlabeled video results have separate scope limitations.
-
-The [date Transformer project](projects/seq2seq-transformer/README.md) now has a package with disjoint reproducible calendar splits, explicit encoder/decoder blocks, validation-selected training, saved-model greedy evaluation, labeled cross-attention exports, notebooks and masking/decoding regression checks. It reached 400/400 exact predictions on one synthetic test split; the rule parser also reached 400/400, and no general translation claim is made. Only the LLM decoding project retains its original imported layout.
-
-To try the ICU pipeline without a dataset download, install that project and run `icu-mortality demo`, or open its `notebooks/quickstart.ipynb`. The demo uses explicitly synthetic records and arbitrary labels.
-
-The ICU project also provides an executed-and-verified real-data notebook workflow, a model card, tested-version constraints, and reproducible aggregate validation charts. See its README for installation and the provenance note for the remaining data-source limitations.
+Read [the project verification table](docs/project-status.md) before interpreting scores. These are educational/research implementations; a successful run is not a generalization, production-readiness or deployment claim.
 
 ## Source history
 
-The seven original repository histories are included as ancestors of the import commits. See [the import manifest](docs/import-manifest.json) for source URLs and exact imported revisions. The original repositories are retained.
-
-## Next improvements
-
-- Review dataset access and verify each project's setup and execution steps.
-- Extract reusable notebook code into project-specific modules where useful.
-- Add focused checks, configuration files, and documented results based on verified runs.
+The original histories of all seven repositories are preserved as ancestors of the consolidation commits. The [import manifest](docs/import-manifest.json) records their URLs and exact imported revisions. Original notebooks are retained under each project's `notebooks/`, and the original repositories remain available.

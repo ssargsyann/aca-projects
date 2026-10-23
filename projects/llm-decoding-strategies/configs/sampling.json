@@ -1,0 +1,9 @@
+{
+  "strategy": "sample",
+  "temperature": 0.7,
+  "top_k": 50,
+  "top_p": 0.9,
+  "max_new_tokens": 24,
+  "seed": 42,
+  "use_cache": true
+}
