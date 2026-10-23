@@ -9,6 +9,6 @@ Checked on 2026-10-23 with Python 3.12 on Windows:
 
 Core tests cover train-only missingness selection, invalid labels, missing features, exclusion of identifiers and configured leakage columns, pipeline serialization, and unseen categories. The smoke run verifies command wiring and optional SHAP integration. Synthetic metrics and generated synthetic plots are deliberately not presented as ICU performance results.
 
-Real-data training remains unverified because the source dataset is absent. Dataset provenance, licensing, feature timing, patient overlap, appropriate holdout design, and model quality still need to be assessed against the actual dataset. The historical notebook is preserved unchanged and is not the maintained training entry point.
+Real-data training and saved-model inference have now been verified on the recovered local CSVs. See [the real-data run report](real-data-results.md) for the exact split and metrics. Dataset provenance, licensing, feature timing, site effects, and external validation still need review. The historical notebook is preserved unchanged and is not the maintained training entry point.
 
 The maintained `demo` command and Jupyter quickstart now provide a dataset-free entry point. GitHub Actions additionally runs the command-line demo. Every generated demo run includes synthetic-data notices and a configuration marker; no synthetic scores are claimed as ICU benchmarks.

@@ -4,7 +4,9 @@ An educational classification project using tabular ICU features, XGBoost, and o
 
 ## Scope and results
 
-The target is `hospital_death` (0 or 1). The dataset source, license, and feature timing have not been established. No real-data benchmark is claimed: the dataset was not included in the original repository. This project is not clinically validated or ready for patient-care use.
+The target is `hospital_death` (0 or 1). The recovered local dataset has now been used for an actual training and validation run: **ROC-AUC 0.8926**, **average precision 0.5393**, and **positive-class recall 0.7697** on a stratified 20% validation partition. See the [real-data run report](docs/real-data-results.md) for precision, sample counts, reproducibility details, and limits. Prediction also completed on 13,757 unlabeled test rows; no hidden-test accuracy is claimed.
+
+Raw datasets, trained models, and row-level predictions remain local and are excluded from Git. Dataset provenance, redistribution rights, and feature timing still need confirmation. This project is not clinically validated or ready for patient-care use.
 
 ## Structure
 

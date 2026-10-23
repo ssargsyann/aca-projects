@@ -14,7 +14,7 @@ The `demo` command generates these invented columns. These are illustrative name
 
 ## Original dataset
 
-The actual dataset is not included and its full schema has not been verified. The original notebook expects `hospital_death` and refers to identifiers and APACHE mortality-probability fields listed in `configs/default.json`. Do not assume the synthetic demo reproduces that dataset.
+The original local dataset was recovered and its column presence was verified by a successful training run: 77,956 rows, 186 columns including `hospital_death`, and 122 predictors retained before encoding. A separate unlabeled file with 13,757 rows passed inference schema checks. The raw files are not included in Git; their upstream provenance and full feature definitions remain unverified. The configured identifier and APACHE probability columns are excluded. Do not assume the synthetic demo reproduces this dataset.
 
 - Training CSV: must include the configured target, both classes 0 and 1, no missing labels, and sufficient rows per class for the configured stratified split.
 - Predictors: numeric and categorical columns. Missing values are imputed using training statistics. Columns exceeding the configured training missingness threshold are dropped.
