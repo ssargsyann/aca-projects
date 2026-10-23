@@ -1,0 +1,42 @@
+# ACA Projects
+
+A collection of seven machine learning, computer vision, and natural language processing projects by Sargis Sargsyan.
+
+## Projects
+
+| Project | Focus |
+| --- | --- |
+| [icu-mortality-prediction](projects/icu-mortality-prediction/README.md) | ICU mortality prediction and model explainability |
+| [customer-segmentation-marketing](projects/customer-segmentation-marketing/README.md) | Customer segmentation for marketing |
+| [cifar10-cnn-pytorch](projects/cifar10-cnn-pytorch/Readme.md) | CIFAR-10 image classification with a CNN |
+| [cv-zoo-yolo-pytorch](projects/cv-zoo-yolo-pytorch/README.md) | Computer vision experiments with YOLO and PyTorch |
+| [unet-yolov8-cv](projects/unet-yolov8-cv/README.md) | Computer vision with U-Net and YOLOv8 |
+| [seq2seq-transformer](projects/seq2seq-transformer/README.md) | Sequence-to-sequence Transformer implementation |
+| [llm-decoding-strategies](projects/llm-decoding-strategies/README.md) | Language model decoding strategies |
+
+## Getting started
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/ssargsyann/aca-projects.git
+   cd aca-projects
+   ```
+
+2. Choose a project under `projects/` and read its README.
+3. Create a separate Python environment for that project and install its own `requirements.txt`. Dependencies may differ between projects.
+4. Open the project's notebook from its project directory. Follow its instructions for datasets, runtime, and any required model downloads.
+
+## Repository layout
+
+Each directory under `projects/` contains the original project's files, including its notebook, README, and requirements. This consolidation preserves the original file contents and Git commit histories. It does not yet refactor the notebooks into Python packages or establish that every notebook runs in a clean environment.
+
+## Source history
+
+The seven original repository histories are included as ancestors of the import commits. See [the import manifest](docs/import-manifest.json) for source URLs and exact imported revisions. The original repositories are retained.
+
+## Next improvements
+
+- Review dataset access and verify each project's setup and execution steps.
+- Extract reusable notebook code into project-specific modules where useful.
+- Add focused checks, configuration files, and documented results based on verified runs.

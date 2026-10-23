@@ -1,0 +1,44 @@
+[
+  {
+    "project": "icu-mortality-prediction",
+    "source": "https://github.com/ssargsyann/ICU-Mortality-Prediction",
+    "source_commit": "47a046d033a88d19d780e7a72fcff0e73fe025dc",
+    "source_branch": "main"
+  },
+  {
+    "project": "customer-segmentation-marketing",
+    "source": "https://github.com/ssargsyann/customer-segmentation-marketing",
+    "source_commit": "c9c57ad0053a2fe000c65f3b1dfebb08001e804d",
+    "source_branch": "main"
+  },
+  {
+    "project": "cifar10-cnn-pytorch",
+    "source": "https://github.com/ssargsyann/cifar10-cnn-pytorch",
+    "source_commit": "7536b912e791cb6d0dc2766e0c2b458c6b269086",
+    "source_branch": "main"
+  },
+  {
+    "project": "cv-zoo-yolo-pytorch",
+    "source": "https://github.com/ssargsyann/cv-zoo-yolo-pytorch",
+    "source_commit": "a1d82444d9525666a0c4ef0121bcd0bb39e0674c",
+    "source_branch": "main"
+  },
+  {
+    "project": "unet-yolov8-cv",
+    "source": "https://github.com/ssargsyann/unet-yolov8-cv",
+    "source_commit": "5aedb85fef98d508f099aa829f93e6395bfdad6b",
+    "source_branch": "main"
+  },
+  {
+    "project": "seq2seq-transformer",
+    "source": "https://github.com/ssargsyann/seq2seq-transformer",
+    "source_commit": "0e46ed87b395bc7e7ca51d93f415fd3b0d7edf3a",
+    "source_branch": "main"
+  },
+  {
+    "project": "llm-decoding-strategies",
+    "source": "https://github.com/ssargsyann/llm-decoding-strategies",
+    "source_commit": "08051abb363d3bb3f3f847e181554baf61dca07c",
+    "source_branch": "main"
+  }
+]
