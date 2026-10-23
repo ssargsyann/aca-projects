@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aca-icu-mortality"
+version = "0.1.0"
+description = "Educational ICU mortality classification pipeline"
+requires-python = ">=3.10"
+dependencies = ["pandas>=1.5,<3", "numpy>=1.23,<3", "scikit-learn>=1.2,<2", "xgboost>=2,<4", "joblib>=1.3,<2"]
+
+[project.optional-dependencies]
+explain = ["shap>=0.42,<1", "matplotlib>=3.7,<4"]
+notebook = ["jupyterlab>=4,<5", "shap>=0.42,<1", "matplotlib>=3.7,<4"]
+
+[project.scripts]
+icu-mortality = "icu_mortality.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

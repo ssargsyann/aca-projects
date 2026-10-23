@@ -29,7 +29,9 @@ A collection of seven machine learning, computer vision, and natural language pr
 
 ## Repository layout
 
-Each directory under `projects/` contains the original project's files, including its notebook, README, and requirements. This consolidation preserves the original file contents and Git commit histories. It does not yet refactor the notebooks into Python packages or establish that every notebook runs in a clean environment.
+Each directory under `projects/` contains a self-contained project. The original Git histories were preserved during consolidation; the import manifest records the imported revisions. Projects can now evolve independently inside this collection.
+
+The [ICU mortality project](projects/icu-mortality-prediction/README.md) now includes a Python package, configurable training, saved-pipeline prediction, optional SHAP plots, and synthetic-data tests. Its original notebook is retained under `notebooks/`. Real-data model performance has not been independently reproduced. The other six projects retain their original imported layout.
 
 ## Source history
 

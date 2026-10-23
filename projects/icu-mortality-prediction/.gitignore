@@ -1,0 +1,8 @@
+data/*
+!data/README.md
+artifacts/*
+!artifacts/README.md
+*.joblib
+*.egg-info/
+build/
+dist/

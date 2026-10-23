@@ -1,0 +1,9 @@
+# Data
+
+The source notebook expects a local CSV named `icu_train.csv` with a binary `hospital_death` target. The dataset itself, its download URL, license, and exact release are not recorded in the original repository and have not been verified.
+
+Place an appropriately authorized dataset at `data/icu_train.csv`. Do not commit patient records or credentials. Before reporting results, document the source, version, permitted use, feature definitions, and availability of each feature at prediction time.
+
+Training requires both target classes, numeric and/or categorical predictors, and enough examples per class for a stratified split. The configured identifiers and APACHE mortality-probability columns are removed. This exclusion list alone does not establish that the remaining features are free of leakage.
+
+The current split is stratified by row. If a dataset contains repeated patients, correlated encounters, multiple hospitals, or a deployment time horizon, use an appropriate grouped, site-based, or temporal validation design before interpreting performance.
