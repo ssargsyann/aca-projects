@@ -11,6 +11,7 @@ import pandas as pd
 from icu_mortality.data import FeatureSelector, validate_target
 from icu_mortality.predict import predict
 from icu_mortality.train import train
+from icu_mortality.demo import make_demo_data, run_demo
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -44,6 +45,22 @@ class DataTests(unittest.TestCase):
 
 
 class PipelineTests(unittest.TestCase):
+    def test_demo_is_reproducible_and_honestly_labeled(self):
+        pd.testing.assert_frame_equal(make_demo_data(60, 7), make_demo_data(60, 7))
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary) / "demo"
+            summary = run_demo(output, rows=60, seed=7)
+            self.assertEqual(summary["data_kind"], "SYNTHETIC_DEMO_ONLY")
+            self.assertEqual(len(pd.read_csv(output / "predictions.csv")), 12)
+            self.assertNotIn("hospital_death", pd.read_csv(output / "synthetic_inference.csv").columns)
+            self.assertTrue((output / "model/pipeline.joblib").exists())
+            with self.assertRaisesRegex(ValueError, "empty or new"):
+                run_demo(output)
+
+    def test_tiny_demo_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, "at least 40"):
+            make_demo_data(5)
+
     def test_training_roundtrip_and_unseen_category(self):
         rng = np.random.default_rng(7)
         frame = pd.DataFrame({

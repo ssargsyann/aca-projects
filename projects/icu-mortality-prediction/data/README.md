@@ -1,5 +1,7 @@
 # Data
 
+To try the code without locating the original dataset, run `icu-mortality demo --output artifacts/demo`. It generates clearly marked synthetic inputs under the output directory. Jupyter users can open `notebooks/quickstart.ipynb`. See `docs/input-schema.md` for the demo fields and real-data requirements.
+
 The source notebook expects a local CSV named `icu_train.csv` with a binary `hospital_death` target. The dataset itself, its download URL, license, and exact release are not recorded in the original repository and have not been verified.
 
 Place an appropriately authorized dataset at `data/icu_train.csv`. Do not commit patient records or credentials. Before reporting results, document the source, version, permitted use, feature definitions, and availability of each feature at prediction time.

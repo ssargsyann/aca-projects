@@ -42,7 +42,48 @@ For notebooks and SHAP, install `python -m pip install -e ".[notebook]"`. Depend
 
 ## Data
 
+No dataset download is needed to try the complete synthetic demo below. For real-data training, provide your original CSV separately.
+
 Read [data/README.md](data/README.md), then supply `data/icu_train.csv` with a binary `hospital_death` column. The original repository does not specify a verified download source or license. Inference CSVs need the retained predictor columns; the target is optional and unused during inference. Extra columns are ignored, missing required features are rejected, and unseen categories are accepted.
+
+## Try it immediately
+
+After installation, run:
+
+```bash
+icu-mortality demo --output artifacts/demo
+```
+
+One command generates invented data, trains a small model, saves metrics and run metadata, reloads the model, and writes example predictions. Labels are arbitrary and balanced; no real patient records are used. Output is explicitly marked `SYNTHETIC_DEMO_ONLY`. These metrics are not ICU benchmarks. The prediction example reuses rows from the generated file to demonstrate inference, not to create a second evaluation.
+
+For SHAP plots too:
+
+```bash
+python -m pip install -e ".[explain]"
+icu-mortality demo --output artifacts/demo-with-shap --explain
+```
+
+Use a fresh output directory for each run; the demo refuses to overwrite an existing nonempty directory. You can choose `--rows` (at least 40) and `--seed`.
+
+Prefer Jupyter? Install `python -m pip install -e ".[notebook]"`, start `jupyter lab`, and open [notebooks/quickstart.ipynb](notebooks/quickstart.ipynb). Select the environment where this package is installed. This notebook runs the maintained synthetic demo and displays its outputs.
+
+### What the demo creates
+
+```text
+artifacts/demo/
+  README.txt                 Synthetic-data notice
+  synthetic_train.csv        Invented labeled rows
+  synthetic_inference.csv    Example predictor-only rows
+  demo-config.json           Exact demonstration settings
+  demo-summary.json          Labeled summary and synthetic metrics
+  predictions.csv            Example scores and classes
+  model/
+    pipeline.joblib
+    metrics.json
+    run.json
+```
+
+See [the input schema](docs/input-schema.md) for the demo column definitions and the real-data contract.
 
 ## Train and evaluate
 
