@@ -1,0 +1,23 @@
+name: Date Transformer checks
+on:
+  push:
+    paths: ["projects/seq2seq-transformer/**", ".github/workflows/date-transformer-checks.yml"]
+  pull_request:
+    paths: ["projects/seq2seq-transformer/**", ".github/workflows/date-transformer-checks.yml"]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/seq2seq-transformer
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -v
+      - run: date-transformer mechanics --output artifacts/ci-mechanics

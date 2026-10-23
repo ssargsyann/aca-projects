@@ -1,0 +1,65 @@
+{
+  "generator": "unique_gregorian_english_dates_v1",
+  "first": "1950-01-01",
+  "last": "2050-12-31",
+  "seed": 42,
+  "sampling": "one seeded shuffle, disjoint slices, all valid calendar days",
+  "vocabulary": [
+    "<PAD>",
+    "<BOS>",
+    "<EOS>",
+    " ",
+    ",",
+    "-",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "A",
+    "D",
+    "F",
+    "J",
+    "M",
+    "N",
+    "O",
+    "S",
+    "a",
+    "b",
+    "c",
+    "e",
+    "g",
+    "h",
+    "i",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "y"
+  ],
+  "splits": {
+    "train": {
+      "count": 4000,
+      "sha256": "c01c890d6e679a969e62b8fb5aae77688681cc6b2533110c888dc3d6df496872"
+    },
+    "validation": {
+      "count": 400,
+      "sha256": "3771392bddc74ceb43db35139dc1ea16904623a3aa31ed958d1d14e607cc5664"
+    },
+    "test": {
+      "count": 400,
+      "sha256": "4bcf10ca416d5620ba3ae51aad4b8967c2d22d3c743eb123d5d0198289a544af"
+    }
+  }
+}

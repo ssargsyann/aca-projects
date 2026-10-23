@@ -1,75 +1,97 @@
-# DIY Transformer: An Encoder-Decoder Seq2Seq Architecture from Scratch
+# Character-Level Date Transformer
 
-A from-scratch PyTorch implementation of the Transformer architecture ("Attention Is All You Need", Vaswani et al., 2017), built as a complete Encoder-Decoder Seq2Seq model and trained on a character-level date-translation task.
+An educational encoder-decoder Transformer assembled from explicit PyTorch attention, feed-forward, residual and normalization blocks. It learns English-date-to-ISO conversion, with reproducible disjoint datasets, teacher-forced and greedy evaluation, checkpoint restoration, attention exports, maintained notebooks and offline regression checks. No pretrained model, external dataset or tokenizer download is required.
 
-This repository is both a **learning resource** and a **reference implementation**: it walks through *why* the Transformer works — the recurrent bottleneck it solves, sub-word tokenization, positional encoding, and multi-head attention — before assembling every architectural component (self-attention, cross-attention, masking, residual connections) into a working, trainable model.
+[Verified results](docs/results.md) · [Model/use card](MODEL_CARD.md) · [Concept corrections](docs/concepts.md) · [Dataset provenance](docs/data.md) · [Automated checks](https://github.com/ssargsyann/aca-projects/actions/workflows/date-transformer-checks.yml)
 
-## Overview
+## Verified result and scope
 
-The Transformer replaced recurrence with **parallelizable self-attention**, enabling the large-scale language models that followed it. This project reconstructs that architecture piece by piece:
+A fresh CPU run used 4,000 distinct training dates, 400 validation dates and 400 disjoint test dates. The 179,626-parameter model, trained for ten epochs, reached **400/400 exact greedy test predictions with EOS**. The deterministic rule parser also scored **400/400**; this task demonstrates the architecture, not an advantage over parsing or general machine-translation ability. All splits use the same canonical English format and 1950–2050 year range.
 
-- **Self-Attention & Multi-Head Attention** — computing pairwise token relationships via scaled dot-product attention, split across multiple heads.
-- **Positional Encoding** — injecting sequence order into a model that has no inherent notion of position.
-- **Masking** — causal masks (to preserve autoregressive generation) and padding masks (to ignore `<PAD>` tokens).
-- **Encoder-Decoder Cross-Attention** — the "information bridge" that lets the decoder condition its output on the full source sequence.
+![Measured training and validation behavior](docs/figures/training.png)
 
-The final model is trained end-to-end on a synthetic task: translating human-readable dates (`August 3, 2026`) into ISO-8601 format (`2026-08-03`), which is small enough to train quickly on a CPU or single GPU while still exercising the full architecture.
+The first epoch's validation teacher-forced token accuracy was 82.43%, but full greedy date accuracy was only 6%. Correct next-token predictions with ground-truth prefixes are not the same as correct self-generated dates. See the [full result record](docs/results.json) and [all 400 test outputs](docs/test-predictions.jsonl).
 
-## Project Structure
+## Structure
 
-The project is contained in a single, self-documented Jupyter notebook: [`transformer_from_scratch.ipynb`](./transformer_from_scratch.ipynb).
-
-### Part 1: Instructor Demos
-
-Four short, standalone demonstrations that build intuition for *why* each architectural choice was made:
-
-| Demo | Concept |
-|---|---|
-| **1. The Recurrent Bottleneck** | Benchmarks a sequential RNN loop against a single parallelized matrix multiplication, illustrating why recurrence doesn't scale. |
-| **2. Sub-Word Tokenization (BPE)** | Uses a pretrained BPE tokenizer to show how sub-word units balance vocabulary size against out-of-vocabulary robustness. |
-| **3. Positional Encoding** | Derives and visualizes sinusoidal positional encodings, and shows how their dot product decays with relative distance. |
-| **4. Multi-Head Splitting & Causal Masking** | Demonstrates that "multi-head" attention is a tensor reshape (not multiple layers), and walks through causal mask construction. |
-
-### Part 2: The DIY Transformer
-
-A complete Encoder-Decoder Seq2Seq Transformer, implemented from scratch in PyTorch and trained on the character-level date-translation task described above:
-
-- **`TokenAndPositionEmbedding`** — combines token embeddings with learned positional embeddings.
-- **`EncoderBlock`** — self-attention followed by a feed-forward network, each with a residual connection and `LayerNorm`.
-- **`DecoderBlock`** — masked self-attention, cross-attention over the encoder's output ("memory"), and a feed-forward network.
-- **`Seq2SeqTransformer`** — assembles stacked encoder and decoder layers into the full model, including causal-mask and padding-mask generation.
-- **Training loop** — trains the model end-to-end with `CrossEntropyLoss`, tracked via a `tqdm` progress bar.
-- **Autoregressive inference** — greedy decoding, generating one character at a time until `<EOS>`.
-- **Bonus: Cross-Attention Heatmap** — visualizes the decoder's cross-attention weights, showing which source characters the model attends to when generating each output character.
-
-## Installation & Usage
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/ssargsyann/seq2seq-transformer.git
-cd seq2seq-transformer
+```text
+configs/                         Quick smoke and measured CPU training settings
+src/date_transformer/
+  data.py                        Unique calendar splits, fixed vocabulary, encoding
+  model.py                       Explicit encoder/decoder blocks and boolean masks
+  generation.py                  Batched greedy decoding, EOS and attention rows
+  workflow.py                    Train/select/reload/evaluate/predict
+  report.py                      Training curves and attention visualization
+  mechanics.py                   Offline sinusoidal and causal-mask teaching demo
+  cli.py                         Command-line entry points
+tests/                           Data, masking, decoding and checkpoint contracts
+notebooks/                       Two maintained notebooks and unchanged original
+docs/                            Results, hashes, test predictions and figures
+data/                            Generation instructions; generated CSVs ignored
+artifacts/                       Local checkpoints/data/outputs; ignored
 ```
 
-### 2. Install dependencies
+## Install
 
-It's recommended to use a virtual environment:
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-```
-
-### 3. Run the notebook
+Python 3.10+; tested with Python 3.12 on Windows CPU. From the collection root:
 
 ```bash
-jupyter notebook transformer_from_scratch.ipynb
+cd projects/seq2seq-transformer
+python -m venv .venv
 ```
 
-Run all cells sequentially. Part 2 trains in a few minutes on CPU (or seconds on GPU), reaching a low loss within 5–10 epochs.
+Activate `.venv\Scripts\Activate.ps1` in Windows PowerShell or `source .venv/bin/activate` on macOS/Linux.
 
-## Author
+```bash
+python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -e ".[notebook]"
+```
 
-**Sargis Sargsyan**
+For commands without Jupyter, `python -m pip install -e .` suffices. No Hugging Face/Transformers, seaborn, or pretrained tokenizer is needed. For CUDA, select a compatible build from [PyTorch](https://pytorch.org/get-started/locally/); CUDA performance/reproducibility is unverified. `constraints-py312-cpu-tested.txt` lists observed direct versions, not a complete cross-platform lock.
+
+## Dataset and training
+
+```bash
+date-transformer dataset --config configs/dates-cpu.json --output artifacts/exported-dates
+date-transformer train --config configs/quickstart.json --output artifacts/quickstart
+date-transformer train --config configs/dates-cpu.json --output artifacts/date-run
+```
+
+The quickstart is an intentionally tiny 128/24/24, two-epoch execution smoke and is not expected to reach the measured run's accuracy. `dates-cpu.json` reproduces the recorded 4,000/400/400, ten-epoch experiment. Choose new/empty output directories; commands preserve existing runs.
+
+Every valid Gregorian day from 1950-01-01 through 2050-12-31 is eligible, including leap days and days 29–31. A single locally seeded shuffle and disjoint slices prevent duplicate dates across splits. The fixed vocabulary is derived from the declared format (English month names, digits and punctuation), not fitted to test observations. The exporter writes train/validation/test CSVs plus SHA-256/count metadata. Encoding rejects unsupported characters and overflow rather than silently truncating.
+
+The model uses learned absolute positions, two encoder/two decoder blocks, width 64, four heads and feed-forward width 128. It follows the notebook's post-norm pattern with PyTorch `nn.MultiheadAttention`; Q/K/V projections and attention kernels are provided by PyTorch. It is not a custom low-level attention kernel or an exact reproduction of the original paper's full training recipe.
+
+Train with teacher forcing, ignore padding in cross entropy, clip gradient norm to 1, and select the highest validation greedy exact-match score (lower validation NLL breaks ties). Only after selection is the saved checkpoint reloaded and test evaluated. Test is not used for model/threshold selection. The checkpoint contains tensor weights, configuration, vocabulary, selected epoch and dataset manifest; loading uses `weights_only=True` and strict state keys.
+
+## Reloaded prediction and evaluation
+
+```bash
+date-transformer predict --checkpoint artifacts/date-run/best.pt --text "August 3, 2026" --attention --output artifacts/example
+date-transformer evaluate --checkpoint artifacts/date-run/best.pt --split test --output artifacts/reloaded-test
+date-transformer mechanics --output artifacts/mechanics
+```
+
+Prediction validates a canonical in-range date such as `August 3, 2026`, then runs the neural decoder; the parser result never replaces the prediction. The decoder caches encoder memory, generates greedily, and reports emitted tokens, EOS termination, and whether its text is a valid ISO date. It has a 12-token budget; malformed/special-token outputs are exposed instead of silently repaired. There is no decoder KV cache, beam search or constrained calendar decoder.
+
+Training saves `best.pt`, exact split CSVs/manifests, `results.json`, per-test predictions, training/attention figures and machine-readable attention. Prediction saves provenance JSON plus the optional figure. Attention is captured from the final decoder layer, averaged across heads; each row labels the token generated at that step, including `<EOS>` if emitted. Source padding columns are omitted. Attention weights illustrate behavior but do not establish causal explanations.
+
+![Cross-attention for the first held-out test date](docs/figures/attention.png)
+
+## Notebooks and checks
+
+```bash
+jupyter lab
+python -m unittest discover -s tests -v
+```
+
+- [quickstart.ipynb](notebooks/quickstart.ipynb) runs a tiny train/reload/predict/evaluate workflow without downloads and makes no accuracy claim.
+- [verified-date-workflow.ipynb](notebooks/verified-date-workflow.ipynb) replays the measured ten-epoch configuration, inspects its greedy metrics, and plots correctly labeled attention.
+- [original_experiment.ipynb](notebooks/original_experiment.ipynb) preserves the imported code/outputs unchanged. Use the maintained notebooks for reproducible execution.
+
+Nine focused tests cover unique calendar splits, strict encoding, target shifts, causal leakage prevention, padding invariance, attention masking, EOS/budget/mixed-batch behavior, odd sinusoidal widths and a train/checkpoint/evaluate/predict round trip. CI runs offline. [Validation details](docs/validation.md).
+
+The historical tokenizer demo used BERT WordPiece rather than BPE; sinusoidal similarity is oscillatory rather than monotonically decreasing; multi-head attention includes learned projections as well as a reshape; the RNN-loop versus QK-only timing is not a comparable Transformer benchmark. These corrections are documented in [concept notes](docs/concepts.md), with primary sources. The model's actual positional embeddings are learned, separately from the sinusoidal teaching demo.
+
+**Author:** Sargis Sargsyan.

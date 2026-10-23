@@ -1,0 +1,227 @@
+{
+  "scope": "synthetic_in_distribution_date_normalization_not_machine_translation_benchmark",
+  "config": {
+    "seed": 42,
+    "train_count": 4000,
+    "validation_count": 400,
+    "test_count": 400,
+    "epochs": 10,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "cpu_threads": 2,
+    "device": "cpu",
+    "model": {
+      "width": 64,
+      "heads": 4,
+      "layers": 2,
+      "ff_width": 128,
+      "dropout": 0.1,
+      "max_length": 32
+    }
+  },
+  "selected_epoch": 10,
+  "validation": {
+    "teacher_forced_nll": 0.0009424515610391444,
+    "teacher_forced_token_accuracy": 1.0,
+    "nonpad_target_tokens": 4400,
+    "count": 400,
+    "greedy_exact_match": 1.0,
+    "greedy_valid_iso": 1.0,
+    "greedy_eos_rate": 1.0,
+    "rule_parser_exact_match": 1.0
+  },
+  "test": {
+    "teacher_forced_nll": 0.0009269314157691869,
+    "teacher_forced_token_accuracy": 1.0,
+    "nonpad_target_tokens": 4400,
+    "count": 400,
+    "greedy_exact_match": 1.0,
+    "greedy_valid_iso": 1.0,
+    "greedy_eos_rate": 1.0,
+    "rule_parser_exact_match": 1.0
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_nll": 1.427348886013031,
+      "validation_teacher_forced_nll": 0.6071378395774147,
+      "validation_teacher_forced_token_accuracy": 0.8243181818181818,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 0.06,
+      "validation_greedy_valid_iso": 0.995,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 2,
+      "train_nll": 0.3027016396522522,
+      "validation_teacher_forced_nll": 0.07465509219603104,
+      "validation_teacher_forced_token_accuracy": 0.9786363636363636,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 0.785,
+      "validation_greedy_valid_iso": 0.9975,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 3,
+      "train_nll": 0.0583861825466156,
+      "validation_teacher_forced_nll": 0.0112285315990448,
+      "validation_teacher_forced_token_accuracy": 0.9995454545454545,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 0.995,
+      "validation_greedy_valid_iso": 1.0,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 4,
+      "train_nll": 0.01338746939599514,
+      "validation_teacher_forced_nll": 0.004355042996731671,
+      "validation_teacher_forced_token_accuracy": 1.0,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 1.0,
+      "validation_greedy_valid_iso": 1.0,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 5,
+      "train_nll": 0.007753298975527286,
+      "validation_teacher_forced_nll": 0.0030122145062143153,
+      "validation_teacher_forced_token_accuracy": 1.0,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 1.0,
+      "validation_greedy_valid_iso": 1.0,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 6,
+      "train_nll": 0.0052622492946684364,
+      "validation_teacher_forced_nll": 0.0021312067183581265,
+      "validation_teacher_forced_token_accuracy": 1.0,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 1.0,
+      "validation_greedy_valid_iso": 1.0,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 7,
+      "train_nll": 0.005388287143781781,
+      "validation_teacher_forced_nll": 0.0021459650790149514,
+      "validation_teacher_forced_token_accuracy": 0.9997727272727273,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 0.9975,
+      "validation_greedy_valid_iso": 1.0,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 8,
+      "train_nll": 0.003851223522797227,
+      "validation_teacher_forced_nll": 0.0013011739775538444,
+      "validation_teacher_forced_token_accuracy": 1.0,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 1.0,
+      "validation_greedy_valid_iso": 1.0,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 9,
+      "train_nll": 0.003940674518235028,
+      "validation_teacher_forced_nll": 0.0011029629747975956,
+      "validation_teacher_forced_token_accuracy": 1.0,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 1.0,
+      "validation_greedy_valid_iso": 1.0,
+      "validation_greedy_eos_rate": 1.0
+    },
+    {
+      "epoch": 10,
+      "train_nll": 0.0024244888573884964,
+      "validation_teacher_forced_nll": 0.0009424515610391444,
+      "validation_teacher_forced_token_accuracy": 1.0,
+      "validation_nonpad_target_tokens": 4400,
+      "validation_count": 400,
+      "validation_greedy_exact_match": 1.0,
+      "validation_greedy_valid_iso": 1.0,
+      "validation_greedy_eos_rate": 1.0
+    }
+  ],
+  "parameters": 179626,
+  "dataset_manifest": {
+    "generator": "unique_gregorian_english_dates_v1",
+    "first": "1950-01-01",
+    "last": "2050-12-31",
+    "seed": 42,
+    "sampling": "one seeded shuffle, disjoint slices, all valid calendar days",
+    "vocabulary": [
+      "<PAD>",
+      "<BOS>",
+      "<EOS>",
+      " ",
+      ",",
+      "-",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "A",
+      "D",
+      "F",
+      "J",
+      "M",
+      "N",
+      "O",
+      "S",
+      "a",
+      "b",
+      "c",
+      "e",
+      "g",
+      "h",
+      "i",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "y"
+    ],
+    "splits": {
+      "train": {
+        "count": 4000,
+        "sha256": "c01c890d6e679a969e62b8fb5aae77688681cc6b2533110c888dc3d6df496872"
+      },
+      "validation": {
+        "count": 400,
+        "sha256": "3771392bddc74ceb43db35139dc1ea16904623a3aa31ed958d1d14e607cc5664"
+      },
+      "test": {
+        "count": 400,
+        "sha256": "4bcf10ca416d5620ba3ae51aad4b8967c2d22d3c743eb123d5d0198289a544af"
+      }
+    }
+  },
+  "checkpoint_sha256": "428530d1021865ac0a16ca5c1c2e9b2f71a560494dacaa56c282b89f70524b44",
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2"
+  }
+}

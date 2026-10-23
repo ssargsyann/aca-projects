@@ -1,0 +1,6 @@
+# Direct versions observed on Windows/Python 3.12 CPU; not a full environment lock.
+# Use the PyTorch CPU index for the +cpu wheel.
+torch==2.14.1+cpu
+numpy==2.5.4
+matplotlib==3.11.2
+jupyterlab==4.6.4
